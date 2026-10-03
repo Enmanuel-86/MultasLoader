@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>978</width>
-    <height>713</height>
+    <width>1481</width>
+    <height>763</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -42,8 +42,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>976</width>
-        <height>711</height>
+        <width>1479</width>
+        <height>761</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -73,1009 +73,1192 @@
          <property name="tipo" stdset="0">
           <string>frame_principal</string>
          </property>
-         <layout class="QGridLayout" name="gridLayout_3">
-          <item row="0" column="0" colspan="2">
-           <layout class="QVBoxLayout" name="verticalLayout_5">
-            <item>
-             <widget class="QFrame" name="frame_form">
-              <property name="minimumSize">
-               <size>
-                <width>821</width>
-                <height>221</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>911</width>
-                <height>251</height>
-               </size>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::StyledPanel</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-              <property name="tipo" stdset="0">
-               <string>frame_form</string>
-              </property>
-              <layout class="QVBoxLayout" name="verticalLayout_3">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame_contenedor">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>381</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>391</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="frame_form">
+               <property name="minimumSize">
+                <size>
+                 <width>821</width>
+                 <height>221</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>221</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <property name="tipo" stdset="0">
+                <string>frame_form</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <item>
+                 <widget class="QFrame" name="frame_titulo_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>51</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>51</height>
+                   </size>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_icon_person">
+                     <property name="minimumSize">
+                      <size>
+                       <width>41</width>
+                       <height>51</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>61</width>
+                       <height>61</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignLeft">
+                    <widget class="QLabel" name="label_datos_multado">
+                     <property name="text">
+                      <string>Datos del multado</string>
+                     </property>
+                     <property name="tipo" stdset="0">
+                      <string>titulo_form</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame">
+                  <property name="minimumSize">
+                   <size>
+                    <width>701</width>
+                    <height>121</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>121</height>
+                   </size>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout">
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="horizontalSpacing">
+                    <number>6</number>
+                   </property>
+                   <item row="0" column="0">
+                    <widget class="QWidget" name="widget_form_nombre" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>161</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>55</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_6">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item alignment="Qt::AlignLeft">
+                       <widget class="QLabel" name="label_nombre">
+                        <property name="text">
+                         <string>Nombre</string>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string>titulo_qlineedit</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="lineEdit_nombre">
+                        <property name="minimumSize">
+                         <size>
+                          <width>161</width>
+                          <height>31</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QWidget" name="widget_form_apellido" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>161</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>55</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_7">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item alignment="Qt::AlignLeft">
+                       <widget class="QLabel" name="label_apellido">
+                        <property name="text">
+                         <string>Apellido</string>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string>titulo_qlineedit</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="lineEdit_apellido">
+                        <property name="minimumSize">
+                         <size>
+                          <width>161</width>
+                          <height>31</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QWidget" name="widget_form_residencia" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>161</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>55</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_8">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item alignment="Qt::AlignLeft">
+                       <widget class="QLabel" name="label_residencia">
+                        <property name="text">
+                         <string>Residencia</string>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string>titulo_qlineedit</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="lineEdit_residencia">
+                        <property name="minimumSize">
+                         <size>
+                          <width>161</width>
+                          <height>31</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="0" column="3">
+                    <widget class="QWidget" name="widget_form_5" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>161</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>55</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_9">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item alignment="Qt::AlignLeft">
+                       <widget class="QLabel" name="label_lugar_acontecimiento">
+                        <property name="text">
+                         <string>Lugar del acontecimiento</string>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string>titulo_qlineedit</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="lineEdit_lugar_acontecimiento">
+                        <property name="minimumSize">
+                         <size>
+                          <width>161</width>
+                          <height>31</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QWidget" name="widget_form_6" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>161</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>55</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_10">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item alignment="Qt::AlignLeft">
+                       <widget class="QLabel" name="label_fecha_multa">
+                        <property name="text">
+                         <string>Fecha de la multa</string>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string>titulo_qlineedit</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QDateEdit" name="dateEdit_fecha_multa">
+                        <property name="minimumSize">
+                         <size>
+                          <width>161</width>
+                          <height>31</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                        <property name="displayFormat">
+                         <string>MM/dd/yyyy</string>
+                        </property>
+                        <property name="calendarPopup">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QWidget" name="widget_form_7" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>161</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>55</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_11">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item alignment="Qt::AlignLeft">
+                       <widget class="QLabel" name="label_monto_cancelar">
+                        <property name="text">
+                         <string>Monto a cancelar</string>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string>titulo_qlineedit</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="lineEdit_monto_cancelar">
+                        <property name="minimumSize">
+                         <size>
+                          <width>161</width>
+                          <height>31</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="frame">
+                         <bool>true</bool>
+                        </property>
+                        <property name="echoMode">
+                         <enum>QLineEdit::Normal</enum>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="1" column="2" colspan="2">
+                    <widget class="QWidget" name="widget_form_8" native="true">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>55</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_12">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item alignment="Qt::AlignLeft">
+                       <widget class="QLabel" name="label_motivo_multa">
+                        <property name="text">
+                         <string>Motivo de la multa</string>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string>titulo_qlineedit</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="comboBox_motivo_multa">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>31</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                        <property name="editable">
+                         <bool>true</bool>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Sin dispositivo de seguridad (sin casco)</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Sin dispositivo de seguridad (sin encerado)</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Transitar en lugar no permitido</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_form_datos_vehiculo">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>146</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <property name="tipo" stdset="0">
+                <string>frame_form</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <widget class="QFrame" name="frame_titulo">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>51</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>51</height>
+                   </size>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_2">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item alignment="Qt::AlignVCenter">
+                    <widget class="QLabel" name="label_icon_car">
+                     <property name="minimumSize">
+                      <size>
+                       <width>41</width>
+                       <height>51</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>61</width>
+                       <height>61</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                     <property name="tipo" stdset="0">
+                      <string>icon_person</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignLeft">
+                    <widget class="QLabel" name="label_datos_del_vehiculo">
+                     <property name="text">
+                      <string>Datos del vehiculo</string>
+                     </property>
+                     <property name="tipo" stdset="0">
+                      <string>titulo_form</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButton">
+                     <property name="minimumSize">
+                      <size>
+                       <width>101</width>
+                       <height>31</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>101</width>
+                       <height>31</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>agregar</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>51</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>51</height>
+                   </size>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <property name="spacing">
+                    <number>6</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QWidget" name="widget_form_vehiculo" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>161</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>55</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_13">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item>
+                       <widget class="QLabel" name="label_tipo_vehiculo">
+                        <property name="text">
+                         <string>Tipo</string>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string>titulo_qlineedit</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="comboBox_tipo_vehiculo">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>161</width>
+                          <height>31</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                        <property name="editable">
+                         <bool>true</bool>
+                        </property>
+                        <property name="frame">
+                         <bool>false</bool>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Moto</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QWidget" name="widget_form_apellido_2" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>161</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>55</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_14">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item alignment="Qt::AlignLeft">
+                       <widget class="QLabel" name="label_modelo">
+                        <property name="text">
+                         <string>Modelo</string>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string>titulo_qlineedit</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="lineEdit_modelo_vehiculo">
+                        <property name="minimumSize">
+                         <size>
+                          <width>161</width>
+                          <height>31</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QWidget" name="widget_form_placa" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>161</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>55</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_15">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item alignment="Qt::AlignLeft">
+                       <widget class="QLabel" name="label_placa_vehiculo">
+                        <property name="text">
+                         <string>Placa</string>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string>titulo_qlineedit</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="lineEdit_placa_vehiculo">
+                        <property name="minimumSize">
+                         <size>
+                          <width>161</width>
+                          <height>31</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QWidget" name="widget_form_color_vehiculo" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>161</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>55</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_16">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item alignment="Qt::AlignLeft">
+                       <widget class="QLabel" name="label_9">
+                        <property name="text">
+                         <string>Color</string>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string>titulo_qlineedit</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="lineEdit_color_vehiculo">
+                        <property name="minimumSize">
+                         <size>
+                          <width>161</width>
+                          <height>31</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="tipo" stdset="0">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QFrame" name="frame_lista_multados">
+            <property name="minimumSize">
+             <size>
+              <width>334</width>
+              <height>371</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>399</width>
+              <height>371</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <property name="tipo" stdset="0">
+             <string>frame_form</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_17">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
                <item>
-                <layout class="QHBoxLayout" name="horizontalLayout">
-                 <property name="spacing">
-                  <number>0</number>
-                 </property>
-                 <item>
-                  <widget class="QLabel" name="label_icon_person">
-                   <property name="minimumSize">
-                    <size>
-                     <width>41</width>
-                     <height>51</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>61</width>
-                     <height>61</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="scaledContents">
-                    <bool>true</bool>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignLeft">
-                  <widget class="QLabel" name="label_datos_multado">
-                   <property name="text">
-                    <string>Datos del multado</string>
-                   </property>
-                   <property name="tipo" stdset="0">
-                    <string>titulo_form</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <spacer name="horizontalSpacer">
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>40</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                </layout>
-               </item>
-               <item>
-                <widget class="QFrame" name="frame">
+                <widget class="QLabel" name="label_icon_list">
                  <property name="minimumSize">
                   <size>
-                   <width>701</width>
-                   <height>121</height>
+                   <width>41</width>
+                   <height>51</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
-                   <width>871</width>
-                   <height>171</height>
+                   <width>61</width>
+                   <height>61</height>
                   </size>
                  </property>
-                 <layout class="QGridLayout" name="gridLayout">
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="horizontalSpacing">
-                   <number>6</number>
-                  </property>
-                  <item row="0" column="0">
-                   <widget class="QWidget" name="widget_form_nombre" native="true">
-                    <property name="minimumSize">
-                     <size>
-                      <width>161</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>201</width>
-                      <height>55</height>
-                     </size>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_6">
-                     <property name="spacing">
-                      <number>0</number>
-                     </property>
-                     <property name="leftMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="topMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="rightMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="bottomMargin">
-                      <number>0</number>
-                     </property>
-                     <item alignment="Qt::AlignLeft">
-                      <widget class="QLabel" name="label_nombre">
-                       <property name="text">
-                        <string>Nombre</string>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string>titulo_qlineedit</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_nombre">
-                       <property name="minimumSize">
-                        <size>
-                         <width>161</width>
-                         <height>31</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>201</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string/>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item row="0" column="1">
-                   <widget class="QWidget" name="widget_form_apellido" native="true">
-                    <property name="minimumSize">
-                     <size>
-                      <width>161</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>201</width>
-                      <height>55</height>
-                     </size>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_7">
-                     <property name="spacing">
-                      <number>0</number>
-                     </property>
-                     <property name="leftMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="topMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="rightMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="bottomMargin">
-                      <number>0</number>
-                     </property>
-                     <item alignment="Qt::AlignLeft">
-                      <widget class="QLabel" name="label_apellido">
-                       <property name="text">
-                        <string>Apellido</string>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string>titulo_qlineedit</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_apellido">
-                       <property name="minimumSize">
-                        <size>
-                         <width>161</width>
-                         <height>31</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>201</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string/>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item row="0" column="2">
-                   <widget class="QWidget" name="widget_form_residencia" native="true">
-                    <property name="minimumSize">
-                     <size>
-                      <width>161</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>201</width>
-                      <height>55</height>
-                     </size>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_8">
-                     <property name="spacing">
-                      <number>0</number>
-                     </property>
-                     <property name="leftMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="topMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="rightMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="bottomMargin">
-                      <number>0</number>
-                     </property>
-                     <item alignment="Qt::AlignLeft">
-                      <widget class="QLabel" name="label_residencia">
-                       <property name="text">
-                        <string>Residencia</string>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string>titulo_qlineedit</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_residencia">
-                       <property name="minimumSize">
-                        <size>
-                         <width>161</width>
-                         <height>31</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>201</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string/>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item row="0" column="3">
-                   <widget class="QWidget" name="widget_form_5" native="true">
-                    <property name="minimumSize">
-                     <size>
-                      <width>161</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>201</width>
-                      <height>55</height>
-                     </size>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_9">
-                     <property name="spacing">
-                      <number>0</number>
-                     </property>
-                     <property name="leftMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="topMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="rightMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="bottomMargin">
-                      <number>0</number>
-                     </property>
-                     <item alignment="Qt::AlignLeft">
-                      <widget class="QLabel" name="label_2">
-                       <property name="text">
-                        <string>Lugar del acontecimiento</string>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string>titulo_qlineedit</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_2">
-                       <property name="minimumSize">
-                        <size>
-                         <width>161</width>
-                         <height>31</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>201</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string/>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item row="1" column="0">
-                   <widget class="QWidget" name="widget_form_6" native="true">
-                    <property name="minimumSize">
-                     <size>
-                      <width>161</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>201</width>
-                      <height>55</height>
-                     </size>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_10">
-                     <property name="spacing">
-                      <number>0</number>
-                     </property>
-                     <property name="leftMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="topMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="rightMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="bottomMargin">
-                      <number>0</number>
-                     </property>
-                     <item alignment="Qt::AlignLeft">
-                      <widget class="QLabel" name="label_3">
-                       <property name="text">
-                        <string>Fecha de la multa</string>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string>titulo_qlineedit</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QDateEdit" name="dateEdit">
-                       <property name="minimumSize">
-                        <size>
-                         <width>161</width>
-                         <height>31</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>201</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="displayFormat">
-                        <string>MM/dd/yyyy</string>
-                       </property>
-                       <property name="calendarPopup">
-                        <bool>true</bool>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item row="1" column="1">
-                   <widget class="QWidget" name="widget_form_7" native="true">
-                    <property name="minimumSize">
-                     <size>
-                      <width>161</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>201</width>
-                      <height>55</height>
-                     </size>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_11">
-                     <property name="spacing">
-                      <number>0</number>
-                     </property>
-                     <property name="leftMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="topMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="rightMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="bottomMargin">
-                      <number>0</number>
-                     </property>
-                     <item alignment="Qt::AlignLeft">
-                      <widget class="QLabel" name="label_4">
-                       <property name="text">
-                        <string>Monto a cancelar</string>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string>titulo_qlineedit</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_3">
-                       <property name="minimumSize">
-                        <size>
-                         <width>161</width>
-                         <height>31</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>201</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string/>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item row="1" column="2" colspan="2">
-                   <widget class="QWidget" name="widget_form_8" native="true">
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>55</height>
-                     </size>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_12">
-                     <property name="spacing">
-                      <number>0</number>
-                     </property>
-                     <property name="leftMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="topMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="rightMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="bottomMargin">
-                      <number>0</number>
-                     </property>
-                     <item alignment="Qt::AlignLeft">
-                      <widget class="QLabel" name="label_5">
-                       <property name="text">
-                        <string>Motivo de la multa</string>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string>titulo_qlineedit</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QComboBox" name="comboBox">
-                       <property name="minimumSize">
-                        <size>
-                         <width>0</width>
-                         <height>31</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="editable">
-                        <bool>true</bool>
-                       </property>
-                       <item>
-                        <property name="text">
-                         <string>Sin dispositivo de seguridad (sin casco)</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string/>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Sin dispositivo de seguridad (sin encerado)</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Transitar en lugar no permitido</string>
-                        </property>
-                       </item>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                 </layout>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
                 </widget>
                </item>
-              </layout>
-             </widget>
-            </item>
-            <item>
-             <widget class="QFrame" name="frame_form_2">
-              <property name="minimumSize">
-               <size>
-                <width>821</width>
-                <height>151</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>911</width>
-                <height>181</height>
-               </size>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::StyledPanel</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-              <property name="tipo" stdset="0">
-               <string>frame_form</string>
-              </property>
-              <layout class="QVBoxLayout" name="verticalLayout_4">
                <item>
-                <layout class="QHBoxLayout" name="horizontalLayout_2">
-                 <item>
-                  <widget class="QLabel" name="label_icon_car">
-                   <property name="minimumSize">
-                    <size>
-                     <width>41</width>
-                     <height>51</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>61</width>
-                     <height>61</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="scaledContents">
-                    <bool>true</bool>
-                   </property>
-                   <property name="tipo" stdset="0">
-                    <string>icon_person</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignLeft">
-                  <widget class="QLabel" name="label_datos_del_vehiculo">
-                   <property name="text">
-                    <string>Datos del vehiculo</string>
-                   </property>
-                   <property name="tipo" stdset="0">
-                    <string>titulo_form</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <spacer name="horizontalSpacer_2">
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>40</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item>
-                  <widget class="QPushButton" name="pushButton">
-                   <property name="minimumSize">
-                    <size>
-                     <width>101</width>
-                     <height>31</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>101</width>
-                     <height>31</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>agregar</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
+                <widget class="QLabel" name="label_datos_multado_2">
+                 <property name="text">
+                  <string>Datos del multado</string>
+                 </property>
+                 <property name="tipo" stdset="0">
+                  <string>titulo_form</string>
+                 </property>
+                </widget>
                </item>
                <item>
-                <widget class="QFrame" name="frame_2">
-                 <property name="maximumSize">
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
                   <size>
-                   <width>871</width>
-                   <height>171</height>
+                   <width>40</width>
+                   <height>20</height>
                   </size>
                  </property>
-                 <layout class="QGridLayout" name="gridLayout_2">
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="horizontalSpacing">
-                   <number>6</number>
-                  </property>
-                  <item row="0" column="1">
-                   <widget class="QWidget" name="widget_form_apellido_2" native="true">
-                    <property name="minimumSize">
-                     <size>
-                      <width>161</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>201</width>
-                      <height>55</height>
-                     </size>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_14">
-                     <property name="spacing">
-                      <number>0</number>
-                     </property>
-                     <property name="leftMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="topMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="rightMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="bottomMargin">
-                      <number>0</number>
-                     </property>
-                     <item alignment="Qt::AlignLeft">
-                      <widget class="QLabel" name="label_modelo">
-                       <property name="text">
-                        <string>Modelo</string>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string>titulo_qlineedit</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_modelo_vehiculo">
-                       <property name="minimumSize">
-                        <size>
-                         <width>161</width>
-                         <height>31</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>201</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string/>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item row="0" column="0">
-                   <widget class="QWidget" name="widget_form_vehiculo" native="true">
-                    <property name="minimumSize">
-                     <size>
-                      <width>161</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>201</width>
-                      <height>55</height>
-                     </size>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_13">
-                     <property name="spacing">
-                      <number>0</number>
-                     </property>
-                     <property name="leftMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="topMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="rightMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="bottomMargin">
-                      <number>0</number>
-                     </property>
-                     <item alignment="Qt::AlignLeft">
-                      <widget class="QLabel" name="label_tipo_vehiculo">
-                       <property name="text">
-                        <string>Tipo</string>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string>titulo_qlineedit</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QComboBox" name="comboBox_tipo_vehiculo">
-                       <property name="minimumSize">
-                        <size>
-                         <width>161</width>
-                         <height>31</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>201</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="editable">
-                        <bool>true</bool>
-                       </property>
-                       <property name="frame">
-                        <bool>false</bool>
-                       </property>
-                       <item>
-                        <property name="text">
-                         <string/>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Moto</string>
-                        </property>
-                       </item>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item row="0" column="2">
-                   <widget class="QWidget" name="widget_form_placa" native="true">
-                    <property name="minimumSize">
-                     <size>
-                      <width>161</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>201</width>
-                      <height>55</height>
-                     </size>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_15">
-                     <property name="spacing">
-                      <number>0</number>
-                     </property>
-                     <property name="leftMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="topMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="rightMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="bottomMargin">
-                      <number>0</number>
-                     </property>
-                     <item alignment="Qt::AlignLeft">
-                      <widget class="QLabel" name="label_placa_vehiculo">
-                       <property name="text">
-                        <string>Placa</string>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string>titulo_qlineedit</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_placa_vehiculo">
-                       <property name="minimumSize">
-                        <size>
-                         <width>161</width>
-                         <height>31</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>201</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string/>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item row="0" column="3">
-                   <widget class="QWidget" name="widget_form_color_vehiculo" native="true">
-                    <property name="minimumSize">
-                     <size>
-                      <width>161</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>201</width>
-                      <height>55</height>
-                     </size>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_16">
-                     <property name="spacing">
-                      <number>0</number>
-                     </property>
-                     <property name="leftMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="topMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="rightMargin">
-                      <number>0</number>
-                     </property>
-                     <property name="bottomMargin">
-                      <number>0</number>
-                     </property>
-                     <item alignment="Qt::AlignLeft">
-                      <widget class="QLabel" name="label_9">
-                       <property name="text">
-                        <string>Color</string>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string>titulo_qlineedit</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_color_vehiculo">
-                       <property name="minimumSize">
-                        <size>
-                         <width>161</width>
-                         <height>31</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>201</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="tipo" stdset="0">
-                        <string/>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
+                </spacer>
                </item>
               </layout>
-             </widget>
-            </item>
-           </layout>
+             </item>
+             <item>
+              <widget class="QListWidget" name="listWidget_multados_pendientes">
+               <item>
+                <property name="text">
+                 <string>Nuevo elemento</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Nuevo elemento</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Nuevo elemento</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Nuevo elemento</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </item>
-          <item row="0" column="2">
-           <spacer name="horizontalSpacer_3">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
+          <item row="1" column="0" colspan="2">
+           <widget class="QFrame" name="frame_3">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
             </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>124</width>
-              <height>20</height>
-             </size>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
             </property>
-           </spacer>
-          </item>
-          <item row="1" column="1">
-           <spacer name="verticalSpacer">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
+            <property name="tipo" stdset="0">
+             <string>frame_form</string>
             </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>302</height>
-             </size>
-            </property>
-           </spacer>
+           </widget>
           </item>
          </layout>
         </widget>
@@ -1087,7 +1270,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../images_resources.qrc"/>
+  <include location="../resources.qrc"/>
  </resources>
  <connections/>
 </ui>
