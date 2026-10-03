@@ -124,6 +124,8 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
                 for i, clave in enumerate(dict_datos_multado):
                     print(f"{i+1}) {clave}: {dict_datos_multado[clave]}.")
 
+                self.listWidget_multados_pendientes.addItem(f"{nombre} {apellido}")
+
             
             
         except:
