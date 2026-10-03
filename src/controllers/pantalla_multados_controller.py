@@ -108,13 +108,13 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
 
                 #dict_datos_multado["tipo_documento"] = tipo_documento
                 #dict_datos_multado["cedula"] = cedula
-                dict_datos_multado["nombre"] = nombre
-                dict_datos_multado["apellido"] = apellido
-                dict_datos_multado["residencia"] = residencia
-                dict_datos_multado["lugar_acontecimiento"] = lugar_acontecimiento
-                dict_datos_multado["fecha_multa"] = fecha_multa
-                dict_datos_multado["monto_cancelar"] = monto_a_cancelar
-                dict_datos_multado["motivo_multa"] = motivo_de_multa
+                dict_datos_multado["nombre"] = nombre.capitalize()
+                dict_datos_multado["apellido"] = apellido.capitalize()
+                dict_datos_multado["residencia"] = residencia.capitalize()
+                dict_datos_multado["lugar_acontecimiento"] = lugar_acontecimiento.capitalize()
+                dict_datos_multado["fecha_multa"] = fecha_multa.capitalize()
+                dict_datos_multado["monto_cancelar"] = monto_a_cancelar.capitalize()
+                dict_datos_multado["motivo_multa"] = motivo_de_multa.capitalize()
 
                 # Una vez ya verificado los campos y sin tener errores podemos
                 # registrar al multado
@@ -124,7 +124,7 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
                 for i, clave in enumerate(dict_datos_multado):
                     print(f"{i+1}) {clave}: {dict_datos_multado[clave]}.")
 
-                self.listWidget_multados_pendientes.addItem(f"{nombre} {apellido}")
+                self.listWidget_multados_pendientes.addItem(f"{nombre.capitalize()} {apellido.capitalize()}")
 
             
             
