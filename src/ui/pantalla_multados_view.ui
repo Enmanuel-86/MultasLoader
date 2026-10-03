@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1481</width>
-    <height>763</height>
+    <width>1040</width>
+    <height>556</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -42,8 +42,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1479</width>
-        <height>761</height>
+        <width>1181</width>
+        <height>537</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -1269,6 +1269,22 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit_nombre</tabstop>
+  <tabstop>lineEdit_apellido</tabstop>
+  <tabstop>lineEdit_residencia</tabstop>
+  <tabstop>lineEdit_lugar_acontecimiento</tabstop>
+  <tabstop>dateEdit_fecha_multa</tabstop>
+  <tabstop>lineEdit_monto_cancelar</tabstop>
+  <tabstop>comboBox_motivo_multa</tabstop>
+  <tabstop>comboBox_tipo_vehiculo</tabstop>
+  <tabstop>lineEdit_modelo_vehiculo</tabstop>
+  <tabstop>lineEdit_placa_vehiculo</tabstop>
+  <tabstop>lineEdit_color_vehiculo</tabstop>
+  <tabstop>scrollArea</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>listWidget_multados_pendientes</tabstop>
+ </tabstops>
  <resources>
   <include location="../resources.qrc"/>
  </resources>
