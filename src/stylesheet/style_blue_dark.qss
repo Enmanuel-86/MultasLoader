@@ -377,6 +377,25 @@ QListWidget::item {
 /*--------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------*/
 
+/* 8. QMessageBox */
+
+QMessageBox {
+	background-color: #2b2b2b;
+}
+
+QMessageBox QLabel {
+	color: #ffffff;
+	font-size: 14px;
+	/*font-weight: bold;*/
+}
+
+QMessageBox QPushButton {
+	color: white;
+	padding: 8px 16px;
+	border-radius: 4px;
+	font-size: 12px;
+	min-width: 50px;
+}
 
 /* adicionales  */
 QLabel#label_icon_person{
