@@ -362,6 +362,22 @@ QScrollBar::sub-page {
 /*--------------------------------------------------------------------------------------------------*/
 
 
+/* 7. QListWidget */
+
+QListWidget{
+	background:rgb(30, 30, 30);
+	border:1px solid #ffffff;
+}
+
+QListWidget::item {
+    /* Propiedades del item */
+    color: #ffffff;
+}
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+
 /* adicionales  */
 QLabel#label_icon_person{
 	image:url(:/icons/images/icons_white/square-user_white.svg)
@@ -370,3 +386,8 @@ QLabel#label_icon_person{
 QLabel#label_icon_car{
 	image:url(:/icons/images/icons_white/car_white.svg)
 }
+
+QLabel#label_icon_list{
+	image:url(:/icons/images/icons_white/list_white.svg)
+}
+
