@@ -1,0 +1,360 @@
+/* 1. QFrames y QWidgets*/
+
+QFrame[tipo="frame_principal"]{
+    background-color: rgb(30, 30, 30);
+}
+
+QFrame[tipo="frame_form"]{
+	background-color: rgb(66, 62, 64);
+	padding:10px;
+	border-radius:20px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+/* 2. QLineEdits */
+
+/*Estilo oscuro para los QLineEdits*/
+QLineEdit{
+	background-color: rgb(30, 30, 30);
+	border:2px solid #1e1e1e;
+	color: rgb(255, 255, 255);
+	padding:0px 4px;
+	font: 12pt "Segoe UI";
+	border-radius:8px;
+}
+
+/* Hover más marcado para que se note */
+QLineEdit:hover {
+    border: 2px solid #0061aa;       
+}
+
+/* Focus azul vibrante tipo Material/Windows */
+QLineEdit:focus {
+    border: 2px solid rgb(25, 118, 210);          
+    background-color: rgb(48, 48, 48);          
+    /*color: #0D47A1;*/
+}
+
+
+/* Placeholder más visible, moderno */
+QLineEdit::placeholder {
+    color: #7F8C8D;
+    font-style: italic;
+}
+
+/* Estilo para QLineEdit cuando está deshabilitado */
+QLineEdit:disabled {
+    background-color: rgb(67, 67, 67);    /* Gris claro para diferenciarlo del blanco activo */
+    border: 2px solid rgb(30, 30, 30);
+    color: #ffffff;               /* Texto gris tenue */
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+/* 3. QLabels */
+
+QLabel{
+	color: rgb(255, 255, 255);
+	border:none;
+	background:none;
+	font: 10pt "Segoe UI";
+	font-weight:500;
+}
+
+
+/*Este label son los que le dan un titulo a un qlineedit*/
+QLabel[tipo="titulo_qlineedit"]{
+	font: 11pt "Segoe UI";
+	font-weight: 500;
+}
+
+/*Este label son los que le dan un titulo del formulario*/
+QLabel[tipo="titulo_form"]{
+	font: 20pt "Segoe UI";
+	padding-left:1px;
+	font-weight: 500;
+}
+
+QLabel[tipo="texto"]{
+	font: 15pt "Segoe UI";
+	padding-left:1px;
+	font-weight: 500;
+}
+
+/*Este label son los que le dan un titulo a un segmento*/
+QLabel[tipo="titulo_segmento"]{
+	font: 25pt "Segoe UI" bold;
+	font-weight: 500;
+}
+
+QLabel[tipo="titulo_qdateedit"]{
+	font: 8pt "Segoe UI";
+	padding-left:1px;
+	font-weight: 500;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/* 4. QDateEdit */
+
+/* CONTENEDOR PRINCIPAL */
+QDateEdit {
+    background: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+    font: 14px "Segoe UI";
+	font-weight: 500;
+    border-radius: 8px;
+    padding: 4px 6px;
+}
+
+
+/* FOCUS */
+QDateEdit:focus {
+   border: 2px solid rgb(25, 118, 210);        
+    background-color: rgb(48, 48, 48);
+}
+
+
+/* BOTONES DE SUBIR Y BAJAR */
+QDateEdit::up-button {
+    width: 35px;
+    background: red;
+    border: none;
+	margin:0px;
+	border-top-right-radius:8px;
+	image: url(:/white-icons/icons_white/chevron-up_white.svg);
+	background:qlineargradient(spread:pad, x1:0, y1:0.545, x2:1, y2:0.545364, 			stop:0 rgba(43, 121, 237, 255), stop:1 rgba(0, 76, 170, 255));
+}
+
+
+QDateEdit::down-button{
+    width: 35px;
+    background: red;
+    border: none;
+	border-bottom-right-radius:8px;
+	image: url(:/white-icons/icons_white/chevron-down_white.svg);
+	background:qlineargradient(spread:pad, x1:0, y1:0.545, x2:1, y2:0.545364, 			stop:0 rgba(43, 121, 237, 255), stop:1 rgba(0, 76, 170, 255));
+}
+
+
+
+/* HOVER A LOS BOTONES */
+QDateEdit::up-button:hover {
+    background: rgb(2, 84, 150);
+}
+
+
+QDateEdit::down-button:hover{
+     background: rgb(2, 84, 150);
+}
+
+QDateEdit::drop-down {
+	width:35px;
+	background:qlineargradient(spread:pad, x1:0, y1:0.545, x2:1, y2:0.545364, 			stop:0 rgba(43, 121, 237, 255), stop:1 rgba(0, 76, 170, 255));
+	image:url(:/white-icons/icons_white/calendar-days_white.svg);
+	border-top-right-radius:8px;
+	border-bottom-right-radius:10px;
+	padding:2px;
+}
+
+QDateEdit::drop-down:hover {
+	width:35px;
+	background:rgb(6, 100, 179)
+}
+
+QCalendarWidget QWidget { 
+        background-color: blue; 
+        color: white; 
+    }
+QCalendarWidget QAbstractItemView:enabled {
+	color: black;
+	background-color: white;
+	selection-background-color: #0078d7;
+	selection-color: white;
+}
+
+QDateEdit:disabled {
+    background-color: rgb(67, 67, 67);    /* Gris claro para diferenciarlo del blanco activo */
+    border: 2px solid rgb(30, 30, 30);
+    color: #000000;               /* Texto gris tenue */
+}
+
+QDateEdit::drop-down:disabled {
+    background-color: rgb(47, 47, 47);
+    color: #000000;               /* Texto gris tenue */
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/* 5. QComboBox */
+
+/*Estilo para el combobox*/
+
+QComboBox{
+	background:rgb(30, 30, 30);
+	font: 10pt "Segoe UI";
+	border-radius: 8px;	
+	border:1px solid #1e1e1e;
+	padding-left:10px;
+	color:#ffffff;
+}
+
+QComboBox::drop-down {
+	width:35px;
+	background:qlineargradient(spread:pad, x1:0, y1:0.545, x2:1, y2:0.545364, 			stop:0 rgba(43, 121, 237, 255), stop:1 rgba(0, 76, 170, 255));
+	image: url(:/white-icons/icons_white/chevron-down_white.svg);
+	border-top-right-radius:6px;
+	border-bottom-right-radius:6px;
+}
+
+QComboBox QAbstractItemView {
+    background: rgb(30, 30, 30);
+	color:#ffffff;
+	padding: 10px 5px;
+	border-left:2px solid rgb(25, 118, 210);
+	border-right:2px solid rgb(25, 118, 210);
+	border-bottom:2px solid rgb(25, 118, 210);
+    selection-background-color: rgb(60, 56, 214);
+}
+
+QComboBox:focus {
+    border: 2px solid rgb(25, 118, 210);         
+    background-color: rgb(48, 48, 48); 
+}
+
+QComboBox::drop-down:pressed{
+	background-color: rgb(0, 76, 170);
+}
+
+QComboBox::drop-down:hover{
+	background: rgb(2, 84, 150);
+}
+
+QComboBox:disabled {
+    background-color: rgb(67, 67, 67);    /* Gris claro para diferenciarlo del blanco activo */
+    border: 2px solid rgb(30, 30, 30);
+    color: #000000;               /* Texto gris tenue */
+}
+
+QComboBox::drop-down:disabled {
+    background-color: rgb(47, 47, 47);
+    color: #000000;               /* Texto gris tenue */
+}
+
+QComboBox:editable {
+    background-color: rgb(30, 30, 30);
+	border:2px solid #1e1e1e;
+	color: rgb(255, 255, 255);
+	padding:0px 4px;
+	font: 12pt "Segoe UI";
+	border-radius:8px;
+}
+
+QComboBox:editable:hover {
+    border: 2px solid #0061aa;       
+}
+
+/* Focus azul vibrante tipo Material/Windows */
+QComboBox:editable:focus {
+    border: 1px solid rgb(25, 118, 210);          
+    background-color: rgb(48, 48, 48);      
+    /*color: #0D47A1;*/
+}
+
+
+/* Estilo para QLineEdit cuando está deshabilitado */
+QComboBox:editable:disabled {
+    background-color: rgb(67, 67, 67);    /* Gris claro para diferenciarlo del blanco activo */
+    border: 2px solid rgb(30, 30, 30);
+    color: #ffffff;               /* Texto gris tenue */
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/* 6. QScrollArea */
+QScrollArea {
+        background-color: transparent;
+ }
+
+ QScrollArea > QWidget > QWidget {
+        background-color: transparent;
+ }
+
+
+/* Fondo general del scrollbar */
+QScrollBar {
+    background: #000000;
+    border: none;
+}
+
+/* Tamaño */
+QScrollBar:vertical {
+    width: 12px;
+	background: #000000
+}
+
+QScrollBar:horizontal {
+    height: 12px;
+	background: #000000
+}
+
+/* ===== HANDLE (la barra que se mueve) ===== */
+QScrollBar::handle {
+    background: #808080;
+    border-radius: 6px;
+	margin:4px;
+}
+
+/* Hover (cuando pasas el mouse) */
+QScrollBar::handle:hover {
+    background: #6e6e6e;
+}
+
+/* Click / Drag */
+QScrollBar::handle:pressed {
+    background: #afafaf;
+}
+
+/* ===== Quitar botones de flechas ===== */
+QScrollBar::add-line,
+QScrollBar::sub-line {
+    background: none;
+    border: none;
+    width: 0px;
+    height: 0px;
+}
+
+/* ===== Quitar zonas de salto ===== */
+QScrollBar::add-page,
+QScrollBar::sub-page {
+    background: none;
+}
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/* adicionales  */
+QLabel#label_icon_person{
+	image:url(:/white-icons/icons_white/square-user_white.svg)
+}
+
+QLabel#label_icon_car{
+	image:url(:/white-icons/icons_white/car_white.svg)
+}
