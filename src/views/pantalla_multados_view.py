@@ -18,7 +18,7 @@ class Ui_PantallaMultasView(object):
     def setupUi(self, PantallaMultasView):
         if not PantallaMultasView.objectName():
             PantallaMultasView.setObjectName(u"PantallaMultasView")
-        PantallaMultasView.resize(1481, 763)
+        PantallaMultasView.resize(1040, 556)
         PantallaMultasView.setStyleSheet(u"")
         self.verticalLayout = QVBoxLayout(PantallaMultasView)
         self.verticalLayout.setSpacing(0)
@@ -29,7 +29,7 @@ class Ui_PantallaMultasView(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 1479, 761))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 1181, 537))
         self.verticalLayout_2 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_2.setSpacing(0)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
@@ -482,6 +482,19 @@ class Ui_PantallaMultasView(object):
 
         self.verticalLayout.addWidget(self.scrollArea)
 
+        QWidget.setTabOrder(self.lineEdit_nombre, self.lineEdit_apellido)
+        QWidget.setTabOrder(self.lineEdit_apellido, self.lineEdit_residencia)
+        QWidget.setTabOrder(self.lineEdit_residencia, self.lineEdit_lugar_acontecimiento)
+        QWidget.setTabOrder(self.lineEdit_lugar_acontecimiento, self.dateEdit_fecha_multa)
+        QWidget.setTabOrder(self.dateEdit_fecha_multa, self.lineEdit_monto_cancelar)
+        QWidget.setTabOrder(self.lineEdit_monto_cancelar, self.comboBox_motivo_multa)
+        QWidget.setTabOrder(self.comboBox_motivo_multa, self.comboBox_tipo_vehiculo)
+        QWidget.setTabOrder(self.comboBox_tipo_vehiculo, self.lineEdit_modelo_vehiculo)
+        QWidget.setTabOrder(self.lineEdit_modelo_vehiculo, self.lineEdit_placa_vehiculo)
+        QWidget.setTabOrder(self.lineEdit_placa_vehiculo, self.lineEdit_color_vehiculo)
+        QWidget.setTabOrder(self.lineEdit_color_vehiculo, self.scrollArea)
+        QWidget.setTabOrder(self.scrollArea, self.pushButton)
+        QWidget.setTabOrder(self.pushButton, self.listWidget_multados_pendientes)
 
         self.retranslateUi(PantallaMultasView)
 
