@@ -34,12 +34,12 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
 
             nombre =  self.lineEdit_nombre.text().strip()
             apellido = self.lineEdit_apellido.text().strip()
-            residencia = self.lineEdit_residencia.text().strip()
-            lugar_acontecimiento = self.lineEdit_lugar_acontecimiento.text().strip()
-            fecha_multa = self.dateEdit_fecha_multa.text().strip()
-            monto_a_cancelar = self.lineEdit_monto_cancelar.text().strip()
-            motivo_de_multa = self.comboBox_motivo_multa.text().strip()
-            tipo_vehiculo = self.comboBox_tipo_vehiculo.text().strip()
+            #residencia = self.lineEdit_residencia.text().strip()
+            #lugar_acontecimiento = self.lineEdit_lugar_acontecimiento.text().strip()
+            #fecha_multa = self.dateEdit_fecha_multa.text().strip()
+            #monto_a_cancelar = self.lineEdit_monto_cancelar.text().strip()
+            #motivo_de_multa = self.comboBox_motivo_multa.text().strip()
+            #tipo_vehiculo = self.comboBox_tipo_vehiculo.text().strip()
 
 
 
@@ -49,7 +49,7 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
             #    dict_errores["cedula"] = "El campo no puede contener letras"
 
             if nombre == "":
-                    dict_errores["nombre"] = "El campo no debe estar vacio"
+                dict_errores["nombre"] = "El campo no debe estar vacio"
             if any(caracter.isdigit() for caracter in nombre):
                 dict_errores["nombre"] = "El campo no puede contener numeros"
 
@@ -57,28 +57,32 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
                     dict_errores["apellido"] = "El campo no debe estar vacio"
             if any(caracter.isdigit() for caracter in apellido):
                 dict_errores["apellido"] = "El campo no puede contener numeros"
-
-            if residencia == "":
-                dict_errores["residencia"] = "El campo no debe estar vacio"
-
-            if lugar_acontecimiento == "":
-                dict_errores["lugar del acontecimiento"] = "El campo no debe estar vacio"
-
-            if fecha_multa == "":
-                dict_errores["fecha de la multa"] = "El campo no debe estar vacio"
-
-            if monto_a_cancelar == "":
-                dict_errores["monto a cancelar"] = "El campo no debe estar vacio"
-            if not monto_a_cancelar.isdigit():
-                dict_errores["monto a cancelar"] = "El campo no puede contener letras"
-
-            if motivo_de_multa == "":
-                dict_errores["motivo de la multa"] = "El campo no debe estar vacio"
-
-            if tipo_vehiculo == "":
-                dict_errores["tipo de vehiculo"] = "El campo no debe estar vacio"
-            if any(caracter.isdigit() for caracter in tipo_vehiculo):
-                dict_errores["tipo de vehiculo"] = "El campo no puede contener numeros"
+            """
+                        
+            
+                        if residencia == "":
+                            dict_errores["residencia"] = "El campo no debe estar vacio"
+            
+                        if lugar_acontecimiento == "":
+                            dict_errores["lugar del acontecimiento"] = "El campo no debe estar vacio"
+            
+                        if fecha_multa == "":
+                            dict_errores["fecha de la multa"] = "El campo no debe estar vacio"
+            
+                        if monto_a_cancelar == "":
+                            dict_errores["monto a cancelar"] = "El campo no debe estar vacio"
+                        if not monto_a_cancelar.isdigit():
+                            dict_errores["monto a cancelar"] = "El campo no puede contener letras"
+            
+                        if motivo_de_multa == "":
+                            dict_errores["motivo de la multa"] = "El campo no debe estar vacio"
+            
+                        if tipo_vehiculo == "":
+                            dict_errores["tipo de vehiculo"] = "El campo no debe estar vacio"
+                        if any(caracter.isdigit() for caracter in tipo_vehiculo):
+                            dict_errores["tipo de vehiculo"] = "El campo no puede contener numeros"
+            
+            """
 
             if len(dict_errores) > 0:
                 raise
@@ -88,11 +92,11 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
                 #dict_datos_multado["cedula"] = cedula
                 dict_datos_multado["nombre"] = nombre
                 dict_datos_multado["apellido"] = apellido
-                dict_datos_multado["residencia"] = residencia
-                dict_datos_multado["lugar_acontecimiento"] = lugar_acontecimiento
-                dict_datos_multado["fecha_multa"] = fecha_multa
-                dict_datos_multado["monto_cancelar"] = monto_a_cancelar
-                dict_datos_multado["motivo_multa"] = motivo_de_multa
+                #dict_datos_multado["residencia"] = residencia
+                #dict_datos_multado["lugar_acontecimiento"] = lugar_acontecimiento
+                #dict_datos_multado["fecha_multa"] = fecha_multa
+                #dict_datos_multado["monto_cancelar"] = monto_a_cancelar
+                #dict_datos_multado["motivo_multa"] = motivo_de_multa
 
                 # Una vez ya verificado los campos y sin tener errores podemos
                 # registrar al multado
@@ -105,10 +109,11 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
         except:
             mensaje = ""
             for i, clave in enumerate(dict_errores):
-                mensaje = f"\n{i+1} {clave}: {dict_errores[clave]}"
+                mensaje += f"{i+1}) {clave.title()}: {dict_errores[clave]}.\n"
+                
             QMessageBox.critical(self,
                                  "Errores en el formulario",
-                                 ""
+                                 mensaje
                                  )
             print(mensaje)
             
