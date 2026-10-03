@@ -11,6 +11,9 @@ class VentanaPrincipal(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("MultasLoader")
+        self.setGeometry(0,0,700,650)
+        self.setMinimumSize(1184, 650)  # Mínimo: 300x300 px
+        #self.setMaximumSize(1080, 800)  # Máximo: 600x600 px
 
         # 1. Crear el QTabWidget contenedor principal
         self.tabs = QTabWidget()
@@ -27,5 +30,5 @@ if __name__ == '__main__':
     window = VentanaPrincipal()
     FuncionesAplicacion.cargar_estilos(app, ruta_archivo=  ":/stylesheets/stylesheet/style_blue_dark.qss")
     window.show()
-    window.showMaximized()
+    #window.showMaximized()
     sys.exit(app.exec_())
