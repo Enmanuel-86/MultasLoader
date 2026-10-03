@@ -102,8 +102,34 @@ QLabel[tipo="titulo_qdateedit"]{
 /*--------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------*/
 
+/* 4. QPushButtons */
 
-/* 4. QDateEdit */
+/*estilo para los botones*/
+QPushButton{
+	background-color:qlineargradient(spread:pad, x1:0.551, y1:0, x2:0.511, y2:1, stop:0 rgba(25, 118, 210, 255), stop:1 rgba(0, 76, 170, 255)) ;
+	border-radius:20px;
+	font: 12pt "Segoe UI";
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+	padding:8px;
+}
+
+QPushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.518, x2:1, y2:0.557, stop:0 rgba(19, 74, 162, 255), stop:1 rgba(0, 51, 136, 255));
+}
+
+QPushButton:disabled{
+	background-color: rgb(2, 43, 81);
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+
+
+/* 5. QDateEdit */
 
 /* CONTENEDOR PRINCIPAL */
 QDateEdit {
@@ -130,7 +156,7 @@ QDateEdit::up-button {
     border: none;
 	margin:0px;
 	border-top-right-radius:8px;
-	image: url(:/white-icons/icons_white/chevron-up_white.svg);
+	image: url(:/icons/images/icons_white/chevron-up_white.svg);
 	background:qlineargradient(spread:pad, x1:0, y1:0.545, x2:1, y2:0.545364, 			stop:0 rgba(43, 121, 237, 255), stop:1 rgba(0, 76, 170, 255));
 }
 
@@ -140,7 +166,7 @@ QDateEdit::down-button{
     background: red;
     border: none;
 	border-bottom-right-radius:8px;
-	image: url(:/white-icons/icons_white/chevron-down_white.svg);
+	image: url(:/icons/images/icons_white/chevron-down_white.svg);
 	background:qlineargradient(spread:pad, x1:0, y1:0.545, x2:1, y2:0.545364, 			stop:0 rgba(43, 121, 237, 255), stop:1 rgba(0, 76, 170, 255));
 }
 
@@ -159,9 +185,9 @@ QDateEdit::down-button:hover{
 QDateEdit::drop-down {
 	width:35px;
 	background:qlineargradient(spread:pad, x1:0, y1:0.545, x2:1, y2:0.545364, 			stop:0 rgba(43, 121, 237, 255), stop:1 rgba(0, 76, 170, 255));
-	image:url(:/white-icons/icons_white/calendar-days_white.svg);
-	border-top-right-radius:8px;
-	border-bottom-right-radius:10px;
+	image:url(:/icons/images/icons_white/calendar-days_white.svg);
+	border-top-right-radius:6px;
+	border-bottom-right-radius:6px;
 	padding:2px;
 }
 
@@ -198,7 +224,7 @@ QDateEdit::drop-down:disabled {
 /*--------------------------------------------------------------------------------------------------*/
 
 
-/* 5. QComboBox */
+/* 6. QComboBox */
 
 /*Estilo para el combobox*/
 
@@ -211,10 +237,15 @@ QComboBox{
 	color:#ffffff;
 }
 
+QComboBox:hover {
+    border: 2px solid #0061aa;       
+}
+
+
 QComboBox::drop-down {
 	width:35px;
 	background:qlineargradient(spread:pad, x1:0, y1:0.545, x2:1, y2:0.545364, 			stop:0 rgba(43, 121, 237, 255), stop:1 rgba(0, 76, 170, 255));
-	image: url(:/white-icons/icons_white/chevron-down_white.svg);
+	image: url(:/icons/images/icons_white/chevron-down_white.svg);
 	border-top-right-radius:6px;
 	border-bottom-right-radius:6px;
 }
@@ -254,32 +285,13 @@ QComboBox::drop-down:disabled {
 }
 
 QComboBox:editable {
-    background-color: rgb(30, 30, 30);
-	border:2px solid #1e1e1e;
 	color: rgb(255, 255, 255);
-	padding:0px 4px;
 	font: 12pt "Segoe UI";
-	border-radius:8px;
-}
-
-QComboBox:editable:hover {
-    border: 2px solid #0061aa;       
-}
-
-/* Focus azul vibrante tipo Material/Windows */
-QComboBox:editable:focus {
-    border: 1px solid rgb(25, 118, 210);          
-    background-color: rgb(48, 48, 48);      
-    /*color: #0D47A1;*/
+	padding: 4px; 
 }
 
 
-/* Estilo para QLineEdit cuando está deshabilitado */
-QComboBox:editable:disabled {
-    background-color: rgb(67, 67, 67);    /* Gris claro para diferenciarlo del blanco activo */
-    border: 2px solid rgb(30, 30, 30);
-    color: #ffffff;               /* Texto gris tenue */
-}
+
 
 
 /*--------------------------------------------------------------------------------------------------*/
@@ -352,9 +364,9 @@ QScrollBar::sub-page {
 
 /* adicionales  */
 QLabel#label_icon_person{
-	image:url(:/white-icons/icons_white/square-user_white.svg)
+	image:url(:/icons/images/icons_white/square-user_white.svg)
 }
 
 QLabel#label_icon_car{
-	image:url(:/white-icons/icons_white/car_white.svg)
+	image:url(:/icons/images/icons_white/car_white.svg)
 }

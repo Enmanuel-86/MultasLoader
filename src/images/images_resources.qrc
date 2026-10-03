@@ -1,9 +1,0 @@
-<RCC>
-  <qresource prefix="white-icons">
-    <file>icons_white/calendar-days_white.svg</file>
-    <file>icons_white/chevron-down_white.svg</file>
-    <file>icons_white/chevron-up_white.svg</file>
-    <file>icons_white/car_white.svg</file>
-    <file>icons_white/square-user_white.svg</file>
-  </qresource>
-</RCC>
