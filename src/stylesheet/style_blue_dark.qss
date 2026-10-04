@@ -1,4 +1,7 @@
 /* 1. QFrames y QWidgets*/
+QMainWindow{
+    background-color: rgb(66, 62, 64);
+}
 
 QFrame[tipo="frame_principal"]{
     background-color: rgb(30, 30, 30);
@@ -438,6 +441,98 @@ QSpinBox:disabled {
     color: #ffffff;               /* Texto gris tenue */
 }
 
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+/* 10. TabWidget */
+/* Contenedor general del QTabWidget */
+QTabWidget {
+    background-color: transparent;
+}
+
+/* Panel/Marco contenedor del contenido de la pestaña */
+QTabWidget::pane {
+    background-color: rgb(30, 30, 30);
+    border: 2px solid rgb(25, 118, 210);
+  
+    top: -1px; /* Solapa el borde superior con la pestaña activa */
+}
+
+/* Alineación de las pestañas */
+QTabWidget::tab-bar {
+    alignment: left;
+}
+
+/* ESTADO BASE DE CADA PESTAÑA */
+QTabBar::tab {
+    background-color: rgb(30, 30, 30);
+    color: #7F8C8D;
+    font: 10pt "Segoe UI";
+    font-weight: 500;
+    border: 1px solid #1e1e1e;
+    border-bottom: none;
+    padding: 8px 16px;
+    margin-right: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    min-width: 90px;
+}
+
+/* HOVER (Al pasar el ratón por encima) */
+QTabBar::tab:hover {
+    background-color: rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
+    border-top: 2px solid #0061aa;
+}
+
+/* PESTAÑA SELECCIONADA / ACTIVA (Usa el mismo gradiente azul de tus QPushButton) */
+QTabBar::tab:selected {
+    background-color: qlineargradient(spread:pad, x1:0.551, y1:0, x2:0.511, y2:1, stop:0 rgba(25, 118, 210, 255), stop:1 rgba(0, 76, 170, 255));
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 1px solid rgb(25, 118, 210);
+    border-bottom: none;
+}
+
+/* PESTAÑA DESHABILITADA */
+QTabBar::tab:disabled {
+    background-color: rgb(67, 67, 67);
+    color: #7F8C8D;
+    border: 1px solid rgb(30, 30, 30);
+}
+
+/* BOTÓN DE CIERRE DE PESTAÑA (setTabsClosable(True)) */
+QTabBar::close-button {
+    image: url(:/icons/images/icons_white/x_white.svg); /* Cambia la ruta por tu icono de cerrar */
+    subcontrol-position: right;
+    margin-left: 4px;
+}
+
+QTabBar::close-button:hover {
+    background-color: rgb(2, 84, 150);
+    border-radius: 4px;
+}
+
+/* FLECHAS DE NAVEGACIÓN CUANDO HAY MUCHAS PESTAÑAS (SCROLL) */
+QTabBar QToolButton {
+    background: qlineargradient(spread:pad, x1:0, y1:0.545, x2:1, y2:0.545364, stop:0 rgba(43, 121, 237, 255), stop:1 rgba(0, 76, 170, 255));
+    border: none;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+QTabBar QToolButton:hover {
+    background: rgb(2, 84, 150);
+}
+
+QTabBar::left-arrow {
+    image: url(:/icons/images/icons_white/chevron-left_white.svg);
+}
+
+QTabBar::right-arrow {
+    image: url(:/icons/images/icons_white/chevron-right_white.svg);
+}
 
 /* adicionales  */
 QLabel#label_icon_person{
