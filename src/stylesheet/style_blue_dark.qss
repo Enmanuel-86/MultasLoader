@@ -107,11 +107,10 @@ QLabel[tipo="titulo_qdateedit"]{
 /*estilo para los botones*/
 QPushButton{
 	background-color:qlineargradient(spread:pad, x1:0.551, y1:0, x2:0.511, y2:1, stop:0 rgba(25, 118, 210, 255), stop:1 rgba(0, 76, 170, 255)) ;
-	border-radius:20px;
-	font: 12pt "Segoe UI";
-	font-weight: 500;
+	border-radius:8px;
+	font: 10pt "Segoe UI";
 	color: rgb(255, 255, 255);
-	padding:8px;
+	padding:5px;
 }
 
 QPushButton:hover{
@@ -183,7 +182,7 @@ QDateEdit::down-button:hover{
 }
 
 QDateEdit::drop-down {
-	width:35px;
+	width:25px;
 	background:qlineargradient(spread:pad, x1:0, y1:0.545, x2:1, y2:0.545364, 			stop:0 rgba(43, 121, 237, 255), stop:1 rgba(0, 76, 170, 255));
 	image:url(:/icons/images/icons_white/calendar-days_white.svg);
 	border-top-right-radius:6px;
@@ -192,7 +191,7 @@ QDateEdit::drop-down {
 }
 
 QDateEdit::drop-down:hover {
-	width:35px;
+	width:20px;
 	background:rgb(6, 100, 179)
 }
 
@@ -243,7 +242,7 @@ QComboBox:hover {
 
 
 QComboBox::drop-down {
-	width:35px;
+	width:25px;
 	background:qlineargradient(spread:pad, x1:0, y1:0.545, x2:1, y2:0.545364, 			stop:0 rgba(43, 121, 237, 255), stop:1 rgba(0, 76, 170, 255));
 	image: url(:/icons/images/icons_white/chevron-down_white.svg);
 	border-top-right-radius:6px;
@@ -396,6 +395,49 @@ QMessageBox QPushButton {
 	font-size: 12px;
 	min-width: 50px;
 }
+
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+/* 9. QSpinBox */
+
+/*Estilo oscuro para los QLineEdits*/
+QSpinBox{
+	background-color: rgb(30, 30, 30);
+	border:2px solid #1e1e1e;
+	color: rgb(255, 255, 255);
+	padding:0px 4px;
+	font: 12pt "Segoe UI";
+	border-radius:8px;
+}
+
+/* Hover más marcado para que se note */
+QSpinBox:hover {
+    border: 2px solid #0061aa;       
+}
+
+/* Focus azul vibrante tipo Material/Windows */
+QSpinBox:focus {
+    border: 2px solid rgb(25, 118, 210);          
+    background-color: rgb(48, 48, 48);          
+    /*color: #0D47A1;*/
+}
+
+
+/* Placeholder más visible, moderno */
+QSpinBox::placeholder {
+    color: #7F8C8D;
+    font-style: italic;
+}
+
+/* Estilo para QLineEdit cuando está deshabilitado */
+QSpinBox:disabled {
+    background-color: rgb(67, 67, 67);    /* Gris claro para diferenciarlo del blanco activo */
+    border: 2px solid rgb(30, 30, 30);
+    color: #ffffff;               /* Texto gris tenue */
+}
+
 
 /* adicionales  */
 QLabel#label_icon_person{
