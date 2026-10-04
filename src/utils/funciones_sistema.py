@@ -8,9 +8,10 @@ import io
 from itertools import zip_longest
 
 
-class FuncionesAplicacion:
-
-    def cargar_estilos(app, ruta_archivo):
+class FuncionesSistema:
+    def __init__(self):
+        pass
+    def cargar_estilos(self, app, ruta_archivo):
         """
             ### Este metodo sirve para cargar las hojas de estilo al sistema
             
@@ -61,7 +62,7 @@ class FuncionesAplicacion:
             print(f"Error al cargar estilos: {e}")
 
 
-    def limpiar_inputs_de_qt(lista_qlineedits_y_qlabel: tuple, lista_qradiobuttons: tuple = (),
+    def limpiar_campos_formulario(self, lista_qlineedits_y_qlabel: tuple, lista_qradiobuttons: tuple = (),
                              lista_qcombobox: tuple = (), lista_spinBox_y_doubleSpinBox: tuple = ()) -> None:
         
         """
@@ -128,3 +129,5 @@ class FuncionesAplicacion:
         else:
             print("Todo se limpio correctamente")
         
+
+funciones_sistema = FuncionesSistema()
