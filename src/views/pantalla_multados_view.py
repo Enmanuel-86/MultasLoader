@@ -117,26 +117,15 @@ class Ui_PantallaMultasView(object):
         self.horizontalLayout_5 = QHBoxLayout()
         self.horizontalLayout_5.setSpacing(0)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
-        self.spinBox_cedula = QSpinBox(self.widget_form)
-        self.spinBox_cedula.setObjectName(u"spinBox_cedula")
-        self.spinBox_cedula.setMinimumSize(QSize(170, 38))
-        self.spinBox_cedula.setMaximumSize(QSize(170, 38))
-        self.spinBox_cedula.setStyleSheet(u"QSpinBox{\n"
+        self.lineEdit_cedula = QLineEdit(self.widget_form)
+        self.lineEdit_cedula.setObjectName(u"lineEdit_cedula")
+        self.lineEdit_cedula.setMaximumSize(QSize(170, 38))
+        self.lineEdit_cedula.setStyleSheet(u"QLineEdit{\n"
 "	border-top-right-radius:0px;\n"
 "	border-bottom-right-radius:0px;\n"
 "}")
-        self.spinBox_cedula.setWrapping(False)
-        self.spinBox_cedula.setFrame(False)
-        self.spinBox_cedula.setButtonSymbols(QAbstractSpinBox.NoButtons)
-        self.spinBox_cedula.setAccelerated(False)
-        self.spinBox_cedula.setCorrectionMode(QAbstractSpinBox.CorrectToNearestValue)
-        self.spinBox_cedula.setKeyboardTracking(True)
-        self.spinBox_cedula.setProperty("showGroupSeparator", True)
-        self.spinBox_cedula.setMaximum(999999999)
-        self.spinBox_cedula.setSingleStep(0)
-        self.spinBox_cedula.setStepType(QAbstractSpinBox.DefaultStepType)
 
-        self.horizontalLayout_5.addWidget(self.spinBox_cedula)
+        self.horizontalLayout_5.addWidget(self.lineEdit_cedula)
 
         self.pushButton_buscar = QPushButton(self.widget_form)
         self.pushButton_buscar.setObjectName(u"pushButton_buscar")
@@ -236,9 +225,10 @@ class Ui_PantallaMultasView(object):
 
         self.dateEdit_fecha_multa = QDateEdit(self.widget_form_6)
         self.dateEdit_fecha_multa.setObjectName(u"dateEdit_fecha_multa")
-        self.dateEdit_fecha_multa.setEnabled(False)
+        self.dateEdit_fecha_multa.setEnabled(True)
         self.dateEdit_fecha_multa.setMinimumSize(QSize(161, 35))
         self.dateEdit_fecha_multa.setMaximumSize(QSize(16777215, 50))
+        self.dateEdit_fecha_multa.setReadOnly(True)
         self.dateEdit_fecha_multa.setCalendarPopup(True)
 
         self.verticalLayout_10.addWidget(self.dateEdit_fecha_multa)
@@ -549,10 +539,10 @@ class Ui_PantallaMultasView(object):
 
         self.verticalLayout_17.addLayout(self.horizontalLayout_3)
 
-        self.listWidget_multados_pendientes = QListWidget(self.frame_lista_multados)
-        self.listWidget_multados_pendientes.setObjectName(u"listWidget_multados_pendientes")
+        self.tableView_multados_pendientes = QTableView(self.frame_lista_multados)
+        self.tableView_multados_pendientes.setObjectName(u"tableView_multados_pendientes")
 
-        self.verticalLayout_17.addWidget(self.listWidget_multados_pendientes)
+        self.verticalLayout_17.addWidget(self.tableView_multados_pendientes)
 
 
         self.gridLayout_3.addWidget(self.frame_lista_multados, 0, 1, 1, 1)
@@ -581,7 +571,6 @@ class Ui_PantallaMultasView(object):
         QWidget.setTabOrder(self.lineEdit_modelo_vehiculo, self.lineEdit_placa_vehiculo)
         QWidget.setTabOrder(self.lineEdit_placa_vehiculo, self.lineEdit_color_vehiculo)
         QWidget.setTabOrder(self.lineEdit_color_vehiculo, self.scrollArea)
-        QWidget.setTabOrder(self.scrollArea, self.listWidget_multados_pendientes)
 
         self.retranslateUi(PantallaMultasView)
 
