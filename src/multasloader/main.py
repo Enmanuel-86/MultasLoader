@@ -1,5 +1,5 @@
 from PySide2.QtWidgets import (QMainWindow,  QTabWidget, QApplication)
-from utils.funciones_sistema import FuncionesAplicacion
+from utils.funciones_sistema import funciones_sistema
 from controllers.pantalla_multados_controller  import PantallaMultadosController
 
 import sys
@@ -28,7 +28,7 @@ class VentanaPrincipal(QMainWindow):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = VentanaPrincipal()
-    FuncionesAplicacion.cargar_estilos(app, ruta_archivo=  ":/stylesheets/stylesheet/style_blue_dark.qss")
+    funciones_sistema.cargar_estilos(app, ruta_archivo=  ":/stylesheets/stylesheet/style_blue_dark.qss")
     window.show()
     #window.showMaximized()
     sys.exit(app.exec_())
