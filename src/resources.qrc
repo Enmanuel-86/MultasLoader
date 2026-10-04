@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="icons">
+    <file>images/icons_white/circle-plus_white.svg</file>
+    <file>images/icons_white/search_white.svg</file>
     <file>images/icons_white/list_white.svg</file>
     <file>images/icons_white/calendar-days_white.svg</file>
     <file>images/icons_white/car_white.svg</file>
