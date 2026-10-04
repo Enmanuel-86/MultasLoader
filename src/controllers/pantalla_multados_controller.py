@@ -1,6 +1,7 @@
 from views.pantalla_multados_view import Ui_PantallaMultasView
 from PySide2.QtWidgets import (QWidget, QMessageBox)
 from PySide2.QtCore import (QDate) 
+from  utils.funciones_sistema import FuncionesAplicacion
 import datetime
 
 class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
@@ -10,18 +11,26 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
 
         self._lista_qlineEdits:tuple =  (self.lineEdit_nombre, self.lineEdit_apellido, self.lineEdit_residencia,
                                          self.lineEdit_lugar_acontecimiento,self.lineEdit_monto_cancelar, self.lineEdit_color_vehiculo,
-                                         self.lineEdit_placa_vehiculo, self.lineEdit_modelo_vehiculo
+                                         self.lineEdit_placa_vehiculo, self.lineEdit_modelo_vehiculo, self.spinBox_cedula
                                          )
 
         self._lista_qcombobox:tuple = (self.comboBox_motivo_multa, self.comboBox_tipo_vehiculo)
 
         self.dateEdit_fecha_multa.setDate(QDate.currentDate())
-        self.pushButton.clicked.connect(self._validar_campos)
+        self.spinBox_cedula.setSpecialValueText(" ")
 
+        self.pushButton_buscar.clicked.connect(self._verificar_registros_previos)
+        self.pushButton_agregar_registro.clicked.connect(self._validar_campos)
 
+    def _verificar_registros_previos(self):
+        print(self.spinBox_cedula.text().strip())
+
+    
     def _validar_campos(self):
 
         try:
+            tipo_documento = self.comboBox_tipo_cedula.currentText()
+            cedula = self.spinBox_cedula.text().strip()
             nombre =  self.lineEdit_nombre.text().strip()
             apellido = self.lineEdit_apellido.text().strip()
             residencia = self.lineEdit_residencia.text().strip()
@@ -39,8 +48,8 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
         try:
             dict_errores:dict = {}
             dict_datos_multado:dict = {
-                                        #"tipo_documento": None,
-                                        #"cedula": None,
+                                        "tipo_documento": None,
+                                        "cedula": None,
                                         "nombre": None,
                                         "apellido": None,
                                         "residencia": None,
@@ -51,10 +60,10 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
                                         }
 
 
-            #if cedula == "":
-            #    dict_errores["cedula"] = "El campo no debe estar vacio"
-            #if not cedula.isdigit():
-            #    dict_errores["cedula"] = "El campo no puede contener letras"
+            if cedula == "":
+                dict_errores["cedula"] = "El campo no debe estar vacio"
+            if not cedula.isdigit():
+                dict_errores["cedula"] = "El campo no puede contener letras"
 
             if nombre == "":
                 dict_errores["nombre"] = "El campo no debe estar vacio"
@@ -106,8 +115,8 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
                 raise
             else:
 
-                #dict_datos_multado["tipo_documento"] = tipo_documento
-                #dict_datos_multado["cedula"] = cedula
+                dict_datos_multado["tipo_documento"] = tipo_documento
+                dict_datos_multado["cedula"] = cedula
                 dict_datos_multado["nombre"] = nombre.capitalize()
                 dict_datos_multado["apellido"] = apellido.capitalize()
                 dict_datos_multado["residencia"] = residencia.capitalize()
