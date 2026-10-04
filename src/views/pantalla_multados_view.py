@@ -18,7 +18,7 @@ class Ui_PantallaMultasView(object):
     def setupUi(self, PantallaMultasView):
         if not PantallaMultasView.objectName():
             PantallaMultasView.setObjectName(u"PantallaMultasView")
-        PantallaMultasView.resize(1040, 556)
+        PantallaMultasView.resize(1316, 878)
         PantallaMultasView.setStyleSheet(u"")
         self.verticalLayout = QVBoxLayout(PantallaMultasView)
         self.verticalLayout.setSpacing(0)
@@ -29,7 +29,7 @@ class Ui_PantallaMultasView(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 1181, 537))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 1314, 876))
         self.verticalLayout_2 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_2.setSpacing(0)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
@@ -38,12 +38,12 @@ class Ui_PantallaMultasView(object):
         self.frame_principal.setObjectName(u"frame_principal")
         self.frame_principal.setFrameShape(QFrame.StyledPanel)
         self.frame_principal.setFrameShadow(QFrame.Raised)
-        self.gridLayout_2 = QGridLayout(self.frame_principal)
-        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_3 = QGridLayout(self.frame_principal)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
         self.frame_contenedor = QFrame(self.frame_principal)
         self.frame_contenedor.setObjectName(u"frame_contenedor")
-        self.frame_contenedor.setMinimumSize(QSize(0, 381))
-        self.frame_contenedor.setMaximumSize(QSize(16777215, 391))
+        self.frame_contenedor.setMinimumSize(QSize(0, 506))
+        self.frame_contenedor.setMaximumSize(QSize(16777215, 506))
         self.verticalLayout_5 = QVBoxLayout(self.frame_contenedor)
         self.verticalLayout_5.setSpacing(6)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
@@ -51,7 +51,7 @@ class Ui_PantallaMultasView(object):
         self.frame_form = QFrame(self.frame_contenedor)
         self.frame_form.setObjectName(u"frame_form")
         self.frame_form.setMinimumSize(QSize(821, 221))
-        self.frame_form.setMaximumSize(QSize(16777215, 221))
+        self.frame_form.setMaximumSize(QSize(16777215, 281))
         self.frame_form.setFrameShape(QFrame.NoFrame)
         self.frame_form.setFrameShadow(QFrame.Raised)
         self.verticalLayout_3 = QVBoxLayout(self.frame_form)
@@ -84,6 +84,81 @@ class Ui_PantallaMultasView(object):
 
         self.verticalLayout_3.addWidget(self.frame_titulo_2)
 
+        self.widget_form = QWidget(self.frame_form)
+        self.widget_form.setObjectName(u"widget_form")
+        self.widget_form.setMinimumSize(QSize(271, 60))
+        self.widget_form.setMaximumSize(QSize(271, 60))
+        self.gridLayout_2 = QGridLayout(self.widget_form)
+        self.gridLayout_2.setSpacing(0)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.label_nombre_2 = QLabel(self.widget_form)
+        self.label_nombre_2.setObjectName(u"label_nombre_2")
+
+        self.gridLayout_2.addWidget(self.label_nombre_2, 0, 0, 1, 1)
+
+        self.comboBox_tipo_cedula = QComboBox(self.widget_form)
+        self.comboBox_tipo_cedula.addItem("")
+        self.comboBox_tipo_cedula.addItem("")
+        self.comboBox_tipo_cedula.setObjectName(u"comboBox_tipo_cedula")
+        sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.comboBox_tipo_cedula.sizePolicy().hasHeightForWidth())
+        self.comboBox_tipo_cedula.setSizePolicy(sizePolicy)
+        self.comboBox_tipo_cedula.setMinimumSize(QSize(56, 37))
+        self.comboBox_tipo_cedula.setMaximumSize(QSize(56, 37))
+        self.comboBox_tipo_cedula.setStyleSheet(u"QComboBox::drop-down {\n"
+"	width:25px;\n"
+"}")
+
+        self.gridLayout_2.addWidget(self.comboBox_tipo_cedula, 1, 0, 1, 1)
+
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setSpacing(0)
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.spinBox_cedula = QSpinBox(self.widget_form)
+        self.spinBox_cedula.setObjectName(u"spinBox_cedula")
+        self.spinBox_cedula.setMinimumSize(QSize(170, 38))
+        self.spinBox_cedula.setMaximumSize(QSize(170, 38))
+        self.spinBox_cedula.setStyleSheet(u"QSpinBox{\n"
+"	border-top-right-radius:0px;\n"
+"	border-bottom-right-radius:0px;\n"
+"}")
+        self.spinBox_cedula.setWrapping(False)
+        self.spinBox_cedula.setFrame(False)
+        self.spinBox_cedula.setButtonSymbols(QAbstractSpinBox.NoButtons)
+        self.spinBox_cedula.setAccelerated(False)
+        self.spinBox_cedula.setCorrectionMode(QAbstractSpinBox.CorrectToNearestValue)
+        self.spinBox_cedula.setKeyboardTracking(True)
+        self.spinBox_cedula.setProperty("showGroupSeparator", True)
+        self.spinBox_cedula.setMaximum(999999999)
+        self.spinBox_cedula.setSingleStep(0)
+        self.spinBox_cedula.setStepType(QAbstractSpinBox.DefaultStepType)
+
+        self.horizontalLayout_5.addWidget(self.spinBox_cedula)
+
+        self.pushButton_buscar = QPushButton(self.widget_form)
+        self.pushButton_buscar.setObjectName(u"pushButton_buscar")
+        self.pushButton_buscar.setMinimumSize(QSize(41, 41))
+        self.pushButton_buscar.setMaximumSize(QSize(41, 41))
+        self.pushButton_buscar.setStyleSheet(u"QPushButton{\n"
+"	border-top-left-radius:0px;\n"
+"	border-bottom-left-radius:0px;\n"
+"}")
+        icon = QIcon()
+        icon.addFile(u":/icons/images/icons_white/search_white.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_buscar.setIcon(icon)
+        self.pushButton_buscar.setIconSize(QSize(25, 25))
+
+        self.horizontalLayout_5.addWidget(self.pushButton_buscar)
+
+
+        self.gridLayout_2.addLayout(self.horizontalLayout_5, 1, 1, 1, 1)
+
+
+        self.verticalLayout_3.addWidget(self.widget_form)
+
         self.frame = QFrame(self.frame_form)
         self.frame.setObjectName(u"frame")
         self.frame.setMinimumSize(QSize(701, 121))
@@ -92,6 +167,85 @@ class Ui_PantallaMultasView(object):
         self.gridLayout.setObjectName(u"gridLayout")
         self.gridLayout.setHorizontalSpacing(6)
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.widget_form_8 = QWidget(self.frame)
+        self.widget_form_8.setObjectName(u"widget_form_8")
+        self.widget_form_8.setMaximumSize(QSize(16777215, 55))
+        self.verticalLayout_12 = QVBoxLayout(self.widget_form_8)
+        self.verticalLayout_12.setSpacing(0)
+        self.verticalLayout_12.setObjectName(u"verticalLayout_12")
+        self.verticalLayout_12.setContentsMargins(0, 0, 0, 0)
+        self.label_motivo_multa = QLabel(self.widget_form_8)
+        self.label_motivo_multa.setObjectName(u"label_motivo_multa")
+
+        self.verticalLayout_12.addWidget(self.label_motivo_multa, 0, Qt.AlignLeft)
+
+        self.comboBox_motivo_multa = QComboBox(self.widget_form_8)
+        self.comboBox_motivo_multa.addItem("")
+        self.comboBox_motivo_multa.addItem("")
+        self.comboBox_motivo_multa.addItem("")
+        self.comboBox_motivo_multa.addItem("")
+        self.comboBox_motivo_multa.setObjectName(u"comboBox_motivo_multa")
+        self.comboBox_motivo_multa.setEnabled(False)
+        self.comboBox_motivo_multa.setMinimumSize(QSize(0, 35))
+        self.comboBox_motivo_multa.setMaximumSize(QSize(16777215, 50))
+        self.comboBox_motivo_multa.setEditable(True)
+
+        self.verticalLayout_12.addWidget(self.comboBox_motivo_multa)
+
+
+        self.gridLayout.addWidget(self.widget_form_8, 1, 2, 1, 2)
+
+        self.widget_form_7 = QWidget(self.frame)
+        self.widget_form_7.setObjectName(u"widget_form_7")
+        self.widget_form_7.setMinimumSize(QSize(161, 0))
+        self.widget_form_7.setMaximumSize(QSize(16777215, 55))
+        self.verticalLayout_11 = QVBoxLayout(self.widget_form_7)
+        self.verticalLayout_11.setSpacing(0)
+        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        self.verticalLayout_11.setContentsMargins(0, 0, 0, 0)
+        self.label_monto_cancelar = QLabel(self.widget_form_7)
+        self.label_monto_cancelar.setObjectName(u"label_monto_cancelar")
+
+        self.verticalLayout_11.addWidget(self.label_monto_cancelar, 0, Qt.AlignLeft)
+
+        self.lineEdit_monto_cancelar = QLineEdit(self.widget_form_7)
+        self.lineEdit_monto_cancelar.setObjectName(u"lineEdit_monto_cancelar")
+        self.lineEdit_monto_cancelar.setEnabled(False)
+        self.lineEdit_monto_cancelar.setMinimumSize(QSize(161, 35))
+        self.lineEdit_monto_cancelar.setMaximumSize(QSize(16777215, 50))
+        self.lineEdit_monto_cancelar.setFrame(True)
+        self.lineEdit_monto_cancelar.setEchoMode(QLineEdit.Normal)
+
+        self.verticalLayout_11.addWidget(self.lineEdit_monto_cancelar)
+
+
+        self.gridLayout.addWidget(self.widget_form_7, 1, 1, 1, 1)
+
+        self.widget_form_6 = QWidget(self.frame)
+        self.widget_form_6.setObjectName(u"widget_form_6")
+        self.widget_form_6.setMinimumSize(QSize(161, 0))
+        self.widget_form_6.setMaximumSize(QSize(16777215, 55))
+        self.verticalLayout_10 = QVBoxLayout(self.widget_form_6)
+        self.verticalLayout_10.setSpacing(0)
+        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
+        self.verticalLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.label_fecha_multa = QLabel(self.widget_form_6)
+        self.label_fecha_multa.setObjectName(u"label_fecha_multa")
+
+        self.verticalLayout_10.addWidget(self.label_fecha_multa, 0, Qt.AlignLeft)
+
+        self.dateEdit_fecha_multa = QDateEdit(self.widget_form_6)
+        self.dateEdit_fecha_multa.setObjectName(u"dateEdit_fecha_multa")
+        self.dateEdit_fecha_multa.setEnabled(False)
+        self.dateEdit_fecha_multa.setMinimumSize(QSize(161, 35))
+        self.dateEdit_fecha_multa.setMaximumSize(QSize(16777215, 50))
+        self.dateEdit_fecha_multa.setCalendarPopup(True)
+
+        self.verticalLayout_10.addWidget(self.dateEdit_fecha_multa)
+
+
+        self.gridLayout.addWidget(self.widget_form_6, 1, 0, 1, 1)
+
         self.widget_form_nombre = QWidget(self.frame)
         self.widget_form_nombre.setObjectName(u"widget_form_nombre")
         self.widget_form_nombre.setMinimumSize(QSize(161, 0))
@@ -107,7 +261,8 @@ class Ui_PantallaMultasView(object):
 
         self.lineEdit_nombre = QLineEdit(self.widget_form_nombre)
         self.lineEdit_nombre.setObjectName(u"lineEdit_nombre")
-        self.lineEdit_nombre.setMinimumSize(QSize(161, 31))
+        self.lineEdit_nombre.setEnabled(False)
+        self.lineEdit_nombre.setMinimumSize(QSize(161, 35))
         self.lineEdit_nombre.setMaximumSize(QSize(16777215, 50))
 
         self.verticalLayout_6.addWidget(self.lineEdit_nombre)
@@ -118,7 +273,7 @@ class Ui_PantallaMultasView(object):
         self.widget_form_apellido = QWidget(self.frame)
         self.widget_form_apellido.setObjectName(u"widget_form_apellido")
         self.widget_form_apellido.setMinimumSize(QSize(161, 0))
-        self.widget_form_apellido.setMaximumSize(QSize(16777215, 55))
+        self.widget_form_apellido.setMaximumSize(QSize(16777215, 60))
         self.verticalLayout_7 = QVBoxLayout(self.widget_form_apellido)
         self.verticalLayout_7.setSpacing(0)
         self.verticalLayout_7.setObjectName(u"verticalLayout_7")
@@ -130,7 +285,8 @@ class Ui_PantallaMultasView(object):
 
         self.lineEdit_apellido = QLineEdit(self.widget_form_apellido)
         self.lineEdit_apellido.setObjectName(u"lineEdit_apellido")
-        self.lineEdit_apellido.setMinimumSize(QSize(161, 31))
+        self.lineEdit_apellido.setEnabled(False)
+        self.lineEdit_apellido.setMinimumSize(QSize(161, 35))
         self.lineEdit_apellido.setMaximumSize(QSize(16777215, 50))
 
         self.verticalLayout_7.addWidget(self.lineEdit_apellido)
@@ -153,7 +309,8 @@ class Ui_PantallaMultasView(object):
 
         self.lineEdit_residencia = QLineEdit(self.widget_form_residencia)
         self.lineEdit_residencia.setObjectName(u"lineEdit_residencia")
-        self.lineEdit_residencia.setMinimumSize(QSize(161, 31))
+        self.lineEdit_residencia.setEnabled(False)
+        self.lineEdit_residencia.setMinimumSize(QSize(161, 35))
         self.lineEdit_residencia.setMaximumSize(QSize(16777215, 50))
 
         self.verticalLayout_8.addWidget(self.lineEdit_residencia)
@@ -176,89 +333,14 @@ class Ui_PantallaMultasView(object):
 
         self.lineEdit_lugar_acontecimiento = QLineEdit(self.widget_form_5)
         self.lineEdit_lugar_acontecimiento.setObjectName(u"lineEdit_lugar_acontecimiento")
-        self.lineEdit_lugar_acontecimiento.setMinimumSize(QSize(161, 31))
+        self.lineEdit_lugar_acontecimiento.setEnabled(False)
+        self.lineEdit_lugar_acontecimiento.setMinimumSize(QSize(161, 35))
         self.lineEdit_lugar_acontecimiento.setMaximumSize(QSize(16777215, 50))
 
         self.verticalLayout_9.addWidget(self.lineEdit_lugar_acontecimiento)
 
 
         self.gridLayout.addWidget(self.widget_form_5, 0, 3, 1, 1)
-
-        self.widget_form_6 = QWidget(self.frame)
-        self.widget_form_6.setObjectName(u"widget_form_6")
-        self.widget_form_6.setMinimumSize(QSize(161, 0))
-        self.widget_form_6.setMaximumSize(QSize(16777215, 55))
-        self.verticalLayout_10 = QVBoxLayout(self.widget_form_6)
-        self.verticalLayout_10.setSpacing(0)
-        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
-        self.verticalLayout_10.setContentsMargins(0, 0, 0, 0)
-        self.label_fecha_multa = QLabel(self.widget_form_6)
-        self.label_fecha_multa.setObjectName(u"label_fecha_multa")
-
-        self.verticalLayout_10.addWidget(self.label_fecha_multa, 0, Qt.AlignLeft)
-
-        self.dateEdit_fecha_multa = QDateEdit(self.widget_form_6)
-        self.dateEdit_fecha_multa.setObjectName(u"dateEdit_fecha_multa")
-        self.dateEdit_fecha_multa.setMinimumSize(QSize(161, 31))
-        self.dateEdit_fecha_multa.setMaximumSize(QSize(16777215, 50))
-        self.dateEdit_fecha_multa.setCalendarPopup(True)
-
-        self.verticalLayout_10.addWidget(self.dateEdit_fecha_multa)
-
-
-        self.gridLayout.addWidget(self.widget_form_6, 1, 0, 1, 1)
-
-        self.widget_form_7 = QWidget(self.frame)
-        self.widget_form_7.setObjectName(u"widget_form_7")
-        self.widget_form_7.setMinimumSize(QSize(161, 0))
-        self.widget_form_7.setMaximumSize(QSize(16777215, 55))
-        self.verticalLayout_11 = QVBoxLayout(self.widget_form_7)
-        self.verticalLayout_11.setSpacing(0)
-        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
-        self.verticalLayout_11.setContentsMargins(0, 0, 0, 0)
-        self.label_monto_cancelar = QLabel(self.widget_form_7)
-        self.label_monto_cancelar.setObjectName(u"label_monto_cancelar")
-
-        self.verticalLayout_11.addWidget(self.label_monto_cancelar, 0, Qt.AlignLeft)
-
-        self.lineEdit_monto_cancelar = QLineEdit(self.widget_form_7)
-        self.lineEdit_monto_cancelar.setObjectName(u"lineEdit_monto_cancelar")
-        self.lineEdit_monto_cancelar.setMinimumSize(QSize(161, 31))
-        self.lineEdit_monto_cancelar.setMaximumSize(QSize(16777215, 50))
-        self.lineEdit_monto_cancelar.setFrame(True)
-        self.lineEdit_monto_cancelar.setEchoMode(QLineEdit.Normal)
-
-        self.verticalLayout_11.addWidget(self.lineEdit_monto_cancelar)
-
-
-        self.gridLayout.addWidget(self.widget_form_7, 1, 1, 1, 1)
-
-        self.widget_form_8 = QWidget(self.frame)
-        self.widget_form_8.setObjectName(u"widget_form_8")
-        self.widget_form_8.setMaximumSize(QSize(16777215, 55))
-        self.verticalLayout_12 = QVBoxLayout(self.widget_form_8)
-        self.verticalLayout_12.setSpacing(0)
-        self.verticalLayout_12.setObjectName(u"verticalLayout_12")
-        self.verticalLayout_12.setContentsMargins(0, 0, 0, 0)
-        self.label_motivo_multa = QLabel(self.widget_form_8)
-        self.label_motivo_multa.setObjectName(u"label_motivo_multa")
-
-        self.verticalLayout_12.addWidget(self.label_motivo_multa, 0, Qt.AlignLeft)
-
-        self.comboBox_motivo_multa = QComboBox(self.widget_form_8)
-        self.comboBox_motivo_multa.addItem("")
-        self.comboBox_motivo_multa.addItem("")
-        self.comboBox_motivo_multa.addItem("")
-        self.comboBox_motivo_multa.addItem("")
-        self.comboBox_motivo_multa.setObjectName(u"comboBox_motivo_multa")
-        self.comboBox_motivo_multa.setMinimumSize(QSize(0, 31))
-        self.comboBox_motivo_multa.setMaximumSize(QSize(16777215, 50))
-        self.comboBox_motivo_multa.setEditable(True)
-
-        self.verticalLayout_12.addWidget(self.comboBox_motivo_multa)
-
-
-        self.gridLayout.addWidget(self.widget_form_8, 1, 2, 1, 2)
 
 
         self.verticalLayout_3.addWidget(self.frame)
@@ -268,7 +350,8 @@ class Ui_PantallaMultasView(object):
 
         self.frame_form_datos_vehiculo = QFrame(self.frame_contenedor)
         self.frame_form_datos_vehiculo.setObjectName(u"frame_form_datos_vehiculo")
-        self.frame_form_datos_vehiculo.setMaximumSize(QSize(16777215, 146))
+        self.frame_form_datos_vehiculo.setMinimumSize(QSize(0, 201))
+        self.frame_form_datos_vehiculo.setMaximumSize(QSize(16777215, 201))
         self.frame_form_datos_vehiculo.setFrameShape(QFrame.NoFrame)
         self.frame_form_datos_vehiculo.setFrameShadow(QFrame.Raised)
         self.verticalLayout_4 = QVBoxLayout(self.frame_form_datos_vehiculo)
@@ -298,20 +381,13 @@ class Ui_PantallaMultasView(object):
 
         self.horizontalLayout_2.addItem(self.horizontalSpacer_2)
 
-        self.pushButton = QPushButton(self.frame_titulo)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setMinimumSize(QSize(101, 31))
-        self.pushButton.setMaximumSize(QSize(101, 31))
-
-        self.horizontalLayout_2.addWidget(self.pushButton)
-
 
         self.verticalLayout_4.addWidget(self.frame_titulo)
 
         self.frame_2 = QFrame(self.frame_form_datos_vehiculo)
         self.frame_2.setObjectName(u"frame_2")
         self.frame_2.setMinimumSize(QSize(0, 51))
-        self.frame_2.setMaximumSize(QSize(16777215, 51))
+        self.frame_2.setMaximumSize(QSize(16777215, 60))
         self.horizontalLayout_4 = QHBoxLayout(self.frame_2)
         self.horizontalLayout_4.setSpacing(6)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
@@ -333,12 +409,13 @@ class Ui_PantallaMultasView(object):
         self.comboBox_tipo_vehiculo.addItem("")
         self.comboBox_tipo_vehiculo.addItem("")
         self.comboBox_tipo_vehiculo.setObjectName(u"comboBox_tipo_vehiculo")
-        sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.comboBox_tipo_vehiculo.sizePolicy().hasHeightForWidth())
-        self.comboBox_tipo_vehiculo.setSizePolicy(sizePolicy)
-        self.comboBox_tipo_vehiculo.setMinimumSize(QSize(161, 31))
+        self.comboBox_tipo_vehiculo.setEnabled(False)
+        sizePolicy1 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.comboBox_tipo_vehiculo.sizePolicy().hasHeightForWidth())
+        self.comboBox_tipo_vehiculo.setSizePolicy(sizePolicy1)
+        self.comboBox_tipo_vehiculo.setMinimumSize(QSize(161, 35))
         self.comboBox_tipo_vehiculo.setMaximumSize(QSize(16777215, 50))
         self.comboBox_tipo_vehiculo.setEditable(True)
         self.comboBox_tipo_vehiculo.setFrame(False)
@@ -363,7 +440,8 @@ class Ui_PantallaMultasView(object):
 
         self.lineEdit_modelo_vehiculo = QLineEdit(self.widget_form_apellido_2)
         self.lineEdit_modelo_vehiculo.setObjectName(u"lineEdit_modelo_vehiculo")
-        self.lineEdit_modelo_vehiculo.setMinimumSize(QSize(161, 31))
+        self.lineEdit_modelo_vehiculo.setEnabled(False)
+        self.lineEdit_modelo_vehiculo.setMinimumSize(QSize(161, 35))
         self.lineEdit_modelo_vehiculo.setMaximumSize(QSize(16777215, 50))
 
         self.verticalLayout_14.addWidget(self.lineEdit_modelo_vehiculo)
@@ -386,7 +464,8 @@ class Ui_PantallaMultasView(object):
 
         self.lineEdit_placa_vehiculo = QLineEdit(self.widget_form_placa)
         self.lineEdit_placa_vehiculo.setObjectName(u"lineEdit_placa_vehiculo")
-        self.lineEdit_placa_vehiculo.setMinimumSize(QSize(161, 31))
+        self.lineEdit_placa_vehiculo.setEnabled(False)
+        self.lineEdit_placa_vehiculo.setMinimumSize(QSize(161, 35))
         self.lineEdit_placa_vehiculo.setMaximumSize(QSize(16777215, 50))
 
         self.verticalLayout_15.addWidget(self.lineEdit_placa_vehiculo)
@@ -409,7 +488,8 @@ class Ui_PantallaMultasView(object):
 
         self.lineEdit_color_vehiculo = QLineEdit(self.widget_form_color_vehiculo)
         self.lineEdit_color_vehiculo.setObjectName(u"lineEdit_color_vehiculo")
-        self.lineEdit_color_vehiculo.setMinimumSize(QSize(161, 31))
+        self.lineEdit_color_vehiculo.setEnabled(False)
+        self.lineEdit_color_vehiculo.setMinimumSize(QSize(161, 35))
         self.lineEdit_color_vehiculo.setMaximumSize(QSize(16777215, 50))
 
         self.verticalLayout_16.addWidget(self.lineEdit_color_vehiculo)
@@ -420,26 +500,39 @@ class Ui_PantallaMultasView(object):
 
         self.verticalLayout_4.addWidget(self.frame_2)
 
+        self.pushButton_agregar_registro = QPushButton(self.frame_form_datos_vehiculo)
+        self.pushButton_agregar_registro.setObjectName(u"pushButton_agregar_registro")
+        self.pushButton_agregar_registro.setEnabled(False)
+        self.pushButton_agregar_registro.setMinimumSize(QSize(101, 31))
+        self.pushButton_agregar_registro.setMaximumSize(QSize(101, 31))
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/images/icons_white/circle-plus_white.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_agregar_registro.setIcon(icon1)
+        self.pushButton_agregar_registro.setIconSize(QSize(20, 20))
+
+        self.verticalLayout_4.addWidget(self.pushButton_agregar_registro, 0, Qt.AlignRight)
+
 
         self.verticalLayout_5.addWidget(self.frame_form_datos_vehiculo)
 
 
-        self.gridLayout_2.addWidget(self.frame_contenedor, 0, 0, 1, 1)
+        self.gridLayout_3.addWidget(self.frame_contenedor, 0, 0, 1, 1)
 
         self.frame_lista_multados = QFrame(self.frame_principal)
         self.frame_lista_multados.setObjectName(u"frame_lista_multados")
-        self.frame_lista_multados.setMinimumSize(QSize(334, 371))
-        self.frame_lista_multados.setMaximumSize(QSize(399, 371))
+        self.frame_lista_multados.setMinimumSize(QSize(334, 493))
+        self.frame_lista_multados.setMaximumSize(QSize(399, 496))
         self.frame_lista_multados.setFrameShape(QFrame.StyledPanel)
         self.frame_lista_multados.setFrameShadow(QFrame.Raised)
         self.verticalLayout_17 = QVBoxLayout(self.frame_lista_multados)
         self.verticalLayout_17.setObjectName(u"verticalLayout_17")
         self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setSpacing(0)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.label_icon_list = QLabel(self.frame_lista_multados)
         self.label_icon_list.setObjectName(u"label_icon_list")
-        self.label_icon_list.setMinimumSize(QSize(41, 51))
-        self.label_icon_list.setMaximumSize(QSize(61, 61))
+        self.label_icon_list.setMinimumSize(QSize(35, 35))
+        self.label_icon_list.setMaximumSize(QSize(35, 35))
         self.label_icon_list.setScaledContents(True)
 
         self.horizontalLayout_3.addWidget(self.label_icon_list)
@@ -457,23 +550,19 @@ class Ui_PantallaMultasView(object):
         self.verticalLayout_17.addLayout(self.horizontalLayout_3)
 
         self.listWidget_multados_pendientes = QListWidget(self.frame_lista_multados)
-        QListWidgetItem(self.listWidget_multados_pendientes)
-        QListWidgetItem(self.listWidget_multados_pendientes)
-        QListWidgetItem(self.listWidget_multados_pendientes)
-        QListWidgetItem(self.listWidget_multados_pendientes)
         self.listWidget_multados_pendientes.setObjectName(u"listWidget_multados_pendientes")
 
         self.verticalLayout_17.addWidget(self.listWidget_multados_pendientes)
 
 
-        self.gridLayout_2.addWidget(self.frame_lista_multados, 0, 1, 1, 1)
+        self.gridLayout_3.addWidget(self.frame_lista_multados, 0, 1, 1, 1)
 
         self.frame_3 = QFrame(self.frame_principal)
         self.frame_3.setObjectName(u"frame_3")
         self.frame_3.setFrameShape(QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QFrame.Raised)
 
-        self.gridLayout_2.addWidget(self.frame_3, 1, 0, 1, 2)
+        self.gridLayout_3.addWidget(self.frame_3, 1, 0, 1, 2)
 
 
         self.verticalLayout_2.addWidget(self.frame_principal)
@@ -482,7 +571,6 @@ class Ui_PantallaMultasView(object):
 
         self.verticalLayout.addWidget(self.scrollArea)
 
-        QWidget.setTabOrder(self.lineEdit_nombre, self.lineEdit_apellido)
         QWidget.setTabOrder(self.lineEdit_apellido, self.lineEdit_residencia)
         QWidget.setTabOrder(self.lineEdit_residencia, self.lineEdit_lugar_acontecimiento)
         QWidget.setTabOrder(self.lineEdit_lugar_acontecimiento, self.dateEdit_fecha_multa)
@@ -493,10 +581,12 @@ class Ui_PantallaMultasView(object):
         QWidget.setTabOrder(self.lineEdit_modelo_vehiculo, self.lineEdit_placa_vehiculo)
         QWidget.setTabOrder(self.lineEdit_placa_vehiculo, self.lineEdit_color_vehiculo)
         QWidget.setTabOrder(self.lineEdit_color_vehiculo, self.scrollArea)
-        QWidget.setTabOrder(self.scrollArea, self.pushButton)
-        QWidget.setTabOrder(self.pushButton, self.listWidget_multados_pendientes)
+        QWidget.setTabOrder(self.scrollArea, self.listWidget_multados_pendientes)
 
         self.retranslateUi(PantallaMultasView)
+
+        self.pushButton_buscar.setDefault(False)
+
 
         QMetaObject.connectSlotsByName(PantallaMultasView)
     # setupUi
@@ -508,6 +598,29 @@ class Ui_PantallaMultasView(object):
         self.label_icon_person.setText("")
         self.label_datos_multado.setText(QCoreApplication.translate("PantallaMultasView", u"Datos del multado", None))
         self.label_datos_multado.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"titulo_form", None))
+        self.label_nombre_2.setText(QCoreApplication.translate("PantallaMultasView", u"Cedula", None))
+        self.label_nombre_2.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"titulo_qlineedit", None))
+        self.comboBox_tipo_cedula.setItemText(0, QCoreApplication.translate("PantallaMultasView", u"V", None))
+        self.comboBox_tipo_cedula.setItemText(1, QCoreApplication.translate("PantallaMultasView", u"E", None))
+
+#if QT_CONFIG(tooltip)
+        self.pushButton_buscar.setToolTip(QCoreApplication.translate("PantallaMultasView", u"Buscar si ta esta  registrado", None))
+#endif // QT_CONFIG(tooltip)
+        self.pushButton_buscar.setText("")
+        self.label_motivo_multa.setText(QCoreApplication.translate("PantallaMultasView", u"Motivo de la multa", None))
+        self.label_motivo_multa.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"titulo_qlineedit", None))
+        self.comboBox_motivo_multa.setItemText(0, "")
+        self.comboBox_motivo_multa.setItemText(1, QCoreApplication.translate("PantallaMultasView", u"Sin dispositivo de seguridad (sin casco)", None))
+        self.comboBox_motivo_multa.setItemText(2, QCoreApplication.translate("PantallaMultasView", u"Sin dispositivo de seguridad (sin encerado)", None))
+        self.comboBox_motivo_multa.setItemText(3, QCoreApplication.translate("PantallaMultasView", u"Transitar en lugar no permitido", None))
+
+        self.label_monto_cancelar.setText(QCoreApplication.translate("PantallaMultasView", u"Monto a cancelar", None))
+        self.label_monto_cancelar.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"titulo_qlineedit", None))
+        self.lineEdit_monto_cancelar.setText("")
+        self.lineEdit_monto_cancelar.setProperty("tipo", "")
+        self.label_fecha_multa.setText(QCoreApplication.translate("PantallaMultasView", u"Fecha de la multa", None))
+        self.label_fecha_multa.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"titulo_qlineedit", None))
+        self.dateEdit_fecha_multa.setDisplayFormat(QCoreApplication.translate("PantallaMultasView", u"MM/dd/yyyy", None))
         self.label_nombre.setText(QCoreApplication.translate("PantallaMultasView", u"Nombre", None))
         self.label_nombre.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"titulo_qlineedit", None))
         self.lineEdit_nombre.setText("")
@@ -524,26 +637,11 @@ class Ui_PantallaMultasView(object):
         self.label_lugar_acontecimiento.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"titulo_qlineedit", None))
         self.lineEdit_lugar_acontecimiento.setText("")
         self.lineEdit_lugar_acontecimiento.setProperty("tipo", "")
-        self.label_fecha_multa.setText(QCoreApplication.translate("PantallaMultasView", u"Fecha de la multa", None))
-        self.label_fecha_multa.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"titulo_qlineedit", None))
-        self.dateEdit_fecha_multa.setDisplayFormat(QCoreApplication.translate("PantallaMultasView", u"MM/dd/yyyy", None))
-        self.label_monto_cancelar.setText(QCoreApplication.translate("PantallaMultasView", u"Monto a cancelar", None))
-        self.label_monto_cancelar.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"titulo_qlineedit", None))
-        self.lineEdit_monto_cancelar.setText("")
-        self.lineEdit_monto_cancelar.setProperty("tipo", "")
-        self.label_motivo_multa.setText(QCoreApplication.translate("PantallaMultasView", u"Motivo de la multa", None))
-        self.label_motivo_multa.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"titulo_qlineedit", None))
-        self.comboBox_motivo_multa.setItemText(0, "")
-        self.comboBox_motivo_multa.setItemText(1, QCoreApplication.translate("PantallaMultasView", u"Sin dispositivo de seguridad (sin casco)", None))
-        self.comboBox_motivo_multa.setItemText(2, QCoreApplication.translate("PantallaMultasView", u"Sin dispositivo de seguridad (sin encerado)", None))
-        self.comboBox_motivo_multa.setItemText(3, QCoreApplication.translate("PantallaMultasView", u"Transitar en lugar no permitido", None))
-
         self.frame_form_datos_vehiculo.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"frame_form", None))
         self.label_icon_car.setText("")
         self.label_icon_car.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"icon_person", None))
         self.label_datos_del_vehiculo.setText(QCoreApplication.translate("PantallaMultasView", u"Datos del vehiculo", None))
         self.label_datos_del_vehiculo.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"titulo_form", None))
-        self.pushButton.setText(QCoreApplication.translate("PantallaMultasView", u"agregar", None))
         self.label_tipo_vehiculo.setText(QCoreApplication.translate("PantallaMultasView", u"Tipo", None))
         self.label_tipo_vehiculo.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"titulo_qlineedit", None))
         self.comboBox_tipo_vehiculo.setItemText(0, "")
@@ -561,23 +659,11 @@ class Ui_PantallaMultasView(object):
         self.label_9.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"titulo_qlineedit", None))
         self.lineEdit_color_vehiculo.setText("")
         self.lineEdit_color_vehiculo.setProperty("tipo", "")
+        self.pushButton_agregar_registro.setText(QCoreApplication.translate("PantallaMultasView", u"agregar", None))
         self.frame_lista_multados.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"frame_form", None))
         self.label_icon_list.setText("")
         self.label_datos_multado_2.setText(QCoreApplication.translate("PantallaMultasView", u"Datos del multado", None))
         self.label_datos_multado_2.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"titulo_form", None))
-
-        __sortingEnabled = self.listWidget_multados_pendientes.isSortingEnabled()
-        self.listWidget_multados_pendientes.setSortingEnabled(False)
-        ___qlistwidgetitem = self.listWidget_multados_pendientes.item(0)
-        ___qlistwidgetitem.setText(QCoreApplication.translate("PantallaMultasView", u"Nuevo elemento", None));
-        ___qlistwidgetitem1 = self.listWidget_multados_pendientes.item(1)
-        ___qlistwidgetitem1.setText(QCoreApplication.translate("PantallaMultasView", u"Nuevo elemento", None));
-        ___qlistwidgetitem2 = self.listWidget_multados_pendientes.item(2)
-        ___qlistwidgetitem2.setText(QCoreApplication.translate("PantallaMultasView", u"Nuevo elemento", None));
-        ___qlistwidgetitem3 = self.listWidget_multados_pendientes.item(3)
-        ___qlistwidgetitem3.setText(QCoreApplication.translate("PantallaMultasView", u"Nuevo elemento", None));
-        self.listWidget_multados_pendientes.setSortingEnabled(__sortingEnabled)
-
         self.frame_3.setProperty("tipo", QCoreApplication.translate("PantallaMultasView", u"frame_form", None))
     # retranslateUi
 
