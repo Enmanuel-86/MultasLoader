@@ -1,7 +1,7 @@
 from views.pantalla_multados_view import Ui_PantallaMultasView
 from PySide2.QtWidgets import (QWidget, QMessageBox)
 from PySide2.QtCore import (QDate) 
-from  utils.funciones_sistema import FuncionesAplicacion
+from  utils.funciones_sistema import funciones_sistema
 import datetime
 
 class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
@@ -11,26 +11,86 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
 
         self._lista_qlineEdits:tuple =  (self.lineEdit_nombre, self.lineEdit_apellido, self.lineEdit_residencia,
                                          self.lineEdit_lugar_acontecimiento,self.lineEdit_monto_cancelar, self.lineEdit_color_vehiculo,
-                                         self.lineEdit_placa_vehiculo, self.lineEdit_modelo_vehiculo, self.spinBox_cedula
+                                         self.lineEdit_placa_vehiculo, self.lineEdit_modelo_vehiculo
                                          )
 
         self._lista_qcombobox:tuple = (self.comboBox_motivo_multa, self.comboBox_tipo_vehiculo)
 
         self.dateEdit_fecha_multa.setDate(QDate.currentDate())
-        self.spinBox_cedula.setSpecialValueText(" ")
 
         self.pushButton_buscar.clicked.connect(self._verificar_registros_previos)
         self.pushButton_agregar_registro.clicked.connect(self._validar_campos)
 
     def _verificar_registros_previos(self):
-        print(self.spinBox_cedula.text().strip())
+
+        try:
+            dict_errores:dict = {}
+            cedula = self.lineEdit_cedula.text().strip()
+            if cedula == "":
+                dict_errores["cedula"] = "El campo no debe estar vacio"
+            elif not cedula.isdigit():
+                dict_errores["cedula"] = "El campo no puede contener letras"
+
+            if len(dict_errores) > 0:
+                raise
+            else:
+
+                if cedula == "123456789":  # si la persona ya estaba multada anteriormente
+
+                    for campos in self._lista_qlineEdits:
+                        campos.setEnabled(True)
+
+                    for campos in self._lista_qcombobox:
+                        campos.setEnabled(True)
+                                
+                    self.dateEdit_fecha_multa.setEnabled(True)
+                    self.dateEdit_fecha_multa.setReadOnly(False)
+
+                    self.lineEdit_nombre.setReadOnly(True)
+                    self.lineEdit_apellido.setReadOnly(True)
+                    self.lineEdit_nombre.setText("Juan")
+                    self.lineEdit_apellido.setText("Perez")
+
+                    self.pushButton_agregar_registro.setEnabled(True)
+
+                    QMessageBox.warning(self, "La persona ya esta registrada", "Esta persona ya fue multada")
+                else:
+                    funciones_sistema.limpiar_campos_formulario(
+                                                                lista_qlineedits_y_qlabel= self._lista_qlineEdits,
+                                                                lista_qcombobox= self._lista_qcombobox,
+                                                                )
+
+                    for campos in self._lista_qlineEdits:
+                        campos.setEnabled(True)
+
+                    for campos in self._lista_qcombobox:
+                        campos.setEnabled(True)
+                                
+                    self.dateEdit_fecha_multa.setEnabled(True)
+                    self.dateEdit_fecha_multa.setReadOnly(False)
+
+                    self.lineEdit_nombre.setReadOnly(False)
+                    self.lineEdit_apellido.setReadOnly(False)
+
+                    self.pushButton_agregar_registro.setEnabled(True)
+        except:
+            mensaje = ""
+            for i, clave in enumerate(dict_errores):
+                mensaje += f"{i+1}) {clave.capitalize()}: {dict_errores[clave]}.\n"
+            
+            QMessageBox.critical(self,
+                                 "Errores en el formulario",
+                                 mensaje
+                                 )
+            print(mensaje)
+
 
     
     def _validar_campos(self):
 
         try:
             tipo_documento = self.comboBox_tipo_cedula.currentText()
-            cedula = self.spinBox_cedula.text().strip()
+            cedula = self.lineEdit_cedula.text().strip()
             nombre =  self.lineEdit_nombre.text().strip()
             apellido = self.lineEdit_apellido.text().strip()
             residencia = self.lineEdit_residencia.text().strip()
@@ -62,7 +122,7 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
 
             if cedula == "":
                 dict_errores["cedula"] = "El campo no debe estar vacio"
-            if not cedula.isdigit():
+            elif not cedula.isdigit():
                 dict_errores["cedula"] = "El campo no puede contener letras"
 
             if nombre == "":
@@ -133,7 +193,6 @@ class PantallaMultadosController(QWidget, Ui_PantallaMultasView):
                 for i, clave in enumerate(dict_datos_multado):
                     print(f"{i+1}) {clave}: {dict_datos_multado[clave]}.")
 
-                self.listWidget_multados_pendientes.addItem(f"{nombre.capitalize()} {apellido.capitalize()}")
 
             
             
