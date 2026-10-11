@@ -25,8 +25,13 @@ class PersonaRepository:
             print("No se pudo realizar la consulta en obtener_todas_las_personas")
 
     def obtener_persona_por_id(self, arg_id_persona):
-        consulta = self.session.query(Personas).filter_by(id_persona = arg_id_persona)
-        return self._consulta_base(consulta)
+        try:
+            consulta = self.session.query(Personas).filter_by(id_persona = arg_id_persona)
+            return self._consulta_base(consulta)
+        except:
+            print("No se pudo realizar la consulta en obtener_todas_las_personas")
+
+    
 
 
 
