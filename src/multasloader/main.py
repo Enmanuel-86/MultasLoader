@@ -28,7 +28,7 @@ class VentanaPrincipal(QMainWindow):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = VentanaPrincipal()
-    funciones_sistema.cargar_estilos(app, ruta_archivo=  ":/stylesheets/stylesheet/style_blue_dark.qss")
+    funciones_sistema.cargar_estilos(app, ruta_archivo=  ":/stylesheets/stylesheet/style_dark_blue.qss")
     window.show()
     #window.showMaximized()
     sys.exit(app.exec_())
