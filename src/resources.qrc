@@ -1,15 +1,15 @@
 <RCC>
   <qresource prefix="icons">
-    <file>images/icons_white/circle-plus_white.svg</file>
-    <file>images/icons_white/search_white.svg</file>
-    <file>images/icons_white/list_white.svg</file>
-    <file>images/icons_white/calendar-days_white.svg</file>
-    <file>images/icons_white/car_white.svg</file>
-    <file>images/icons_white/chevron-down_white.svg</file>
-    <file>images/icons_white/chevron-up_white.svg</file>
-    <file>images/icons_white/square-user_white.svg</file>
+    <file>images/white_icons/calendar-days_white.svg</file>
+    <file>images/white_icons/car_white.svg</file>
+    <file>images/white_icons/chevron-down_white.svg</file>
+    <file>images/white_icons/chevron-up_white.svg</file>
+    <file>images/white_icons/circle-plus_white.svg</file>
+    <file>images/white_icons/list_white.svg</file>
+    <file>images/white_icons/search_white.svg</file>
+    <file>images/white_icons/square-user_white.svg</file>
   </qresource>
   <qresource prefix="stylesheets">
-    <file>stylesheet/style_blue_dark.qss</file>
+    <file>stylesheet/style_dark_blue.qss</file>
   </qresource>
 </RCC>
