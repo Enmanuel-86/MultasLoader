@@ -136,7 +136,7 @@ class Ui_PantallaMultasView(object):
 "	border-bottom-left-radius:0px;\n"
 "}")
         icon = QIcon()
-        icon.addFile(u":/icons/images/icons_white/search_white.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/icons/images/white_icons/search_white.svg", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_buscar.setIcon(icon)
         self.pushButton_buscar.setIconSize(QSize(25, 25))
 
@@ -496,7 +496,7 @@ class Ui_PantallaMultasView(object):
         self.pushButton_agregar_registro.setMinimumSize(QSize(101, 31))
         self.pushButton_agregar_registro.setMaximumSize(QSize(101, 31))
         icon1 = QIcon()
-        icon1.addFile(u":/icons/images/icons_white/circle-plus_white.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/icons/images/white_icons/circle-plus_white.svg", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_agregar_registro.setIcon(icon1)
         self.pushButton_agregar_registro.setIconSize(QSize(20, 20))
 

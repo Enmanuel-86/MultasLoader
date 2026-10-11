@@ -332,7 +332,7 @@
                        </property>
                        <property name="icon">
                         <iconset resource="../resources.qrc">
-                         <normaloff>:/icons/images/icons_white/search_white.svg</normaloff>:/icons/images/icons_white/search_white.svg</iconset>
+                         <normaloff>:/icons/images/white_icons/search_white.svg</normaloff>:/icons/images/white_icons/search_white.svg</iconset>
                        </property>
                        <property name="iconSize">
                         <size>
@@ -1330,7 +1330,7 @@
                   </property>
                   <property name="icon">
                    <iconset resource="../resources.qrc">
-                    <normaloff>:/icons/images/icons_white/circle-plus_white.svg</normaloff>:/icons/images/icons_white/circle-plus_white.svg</iconset>
+                    <normaloff>:/icons/images/white_icons/circle-plus_white.svg</normaloff>:/icons/images/white_icons/circle-plus_white.svg</iconset>
                   </property>
                   <property name="iconSize">
                    <size>
