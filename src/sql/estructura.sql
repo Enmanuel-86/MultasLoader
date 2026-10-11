@@ -57,6 +57,7 @@ CREATE TABLE multasloader.multados_por_vehiculo(
 	id_vehiculo INT UNSIGNED NOT NULL,
 	lugar_acontecimiento VARCHAR(70) NOT NULL,
 	fecha_multa DATE NOT NULL,
+	fecha_emision_multa DATE NOT NULL DEFAULT CURRENT_DATE(),
 	monto_cancelar DECIMAL(10,2) NOT NULL,
 	FOREIGN KEY (id_persona) REFERENCES multasloader.personas(id_persona)
 		ON UPDATE CASCADE
@@ -74,6 +75,7 @@ CREATE TABLE multasloader.multados_en_espera(
 	id_vehiculo INT UNSIGNED,
 	lugar_acontecimiento VARCHAR(70) NOT NULL,
 	fecha_multa DATE NOT NULL,
+	fecha_emision_multa DATE NOT NULL DEFAULT CURRENT_DATE(),
 	monto_cancelar DECIMAL(10,2) NOT NULL,
 	FOREIGN KEY (id_persona) REFERENCES multasloader.personas(id_persona)
 		ON UPDATE CASCADE
