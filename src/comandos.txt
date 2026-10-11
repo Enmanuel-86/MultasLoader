@@ -1,0 +1,5 @@
+uv run .\src\multasloader\main.py
+
+pyside2-uic .\src\ui\pantalla_multados_view.ui  -o  .\src\views\pantalla_multados_view.py
+
+pyside2-rcc .\src\resources.qrc -o .\src\resources_rc.py 
