@@ -1,5 +1,5 @@
 from ..conexion_db import session
-from ..models.personas import Personas
+from ..models.personas_model import Personas
 
 class PersonaRepository:
     def __init__(self):
